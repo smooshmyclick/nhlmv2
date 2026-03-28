@@ -3192,7 +3192,6 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 .catacc-ev-img {
   position: absolute;
   inset: 0;
-  background-image: url('https://i.pinimg.com/1200x/6a/4b/aa/6a4baaa4e994a4fde20a3e69c4fc8f5e.jpg');
   background-size: cover;
   background-position: center 40%;
   filter: brightness(.28) saturate(.5);
