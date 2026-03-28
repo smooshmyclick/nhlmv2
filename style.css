@@ -2987,6 +2987,12 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 
 /* === SECTION ACCUEIL (catacc) === */
+/* ================================================================
+   NIHILUM — SECTION ACCUEIL (catacc)
+   À coller dans le panneau CSS admin, après le CSS existant.
+   Préfixe exclusif : .catacc-
+   Variables : uniquement celles déjà définies dans :root
+   ================================================================ */
 
 /* ── WRAPPER GLOBAL ── */
 .catacc-dim {
@@ -3297,7 +3303,6 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 .catacc-news-item {
   display: flex;
   gap: 9px;
-  cursor: pointer;
   padding: 6px 0;
   border-bottom: 1px solid var(--line);
 }
@@ -3510,19 +3515,4 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   letter-spacing: .1em;
   text-transform: uppercase;
   white-space: nowrap;
-}
-.catacc-staff-status {
-  width: 5px; height: 5px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: #34c764;
-  box-shadow: 0 0 4px rgba(52,199,100,.7);
-}
-.catacc-staff-status.away {
-  background: #e0a020;
-  box-shadow: 0 0 4px rgba(224,160,32,.6);
-}
-.catacc-staff-status.offline {
-  background: var(--t3);
-  box-shadow: none;
 }
