@@ -2985,3 +2985,544 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   line-height: 1;
   flex-shrink: 0;
 }
+
+/* === SECTION ACCUEIL (catacc) === */
+
+/* ── WRAPPER GLOBAL ── */
+.catacc-dim {
+  padding: 0 60px;
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ── EN-TÊTE DE SECTION ── */
+.catacc-sec-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 32px 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line2);
+}
+.catacc-sec-title {
+  font-family: var(--ff);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--t1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.catacc-sec-title::before {
+  content: '';
+  width: 2px;
+  height: 12px;
+  background: var(--a);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.catacc-sec-link {
+  font-size: 10px;
+  color: var(--t3);
+  text-decoration: none;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  transition: color .12s;
+}
+.catacc-sec-link:hover { color: var(--a); }
+
+/* ── GRILLE PRINCIPALE ── */
+.catacc-zone {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 10px;
+  height: 400px;
+}
+
+/* ════════════════════════════════════════════
+   BLOC GAUCHE : topics + événement
+   ════════════════════════════════════════════ */
+.catacc-left {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  border: 1px solid var(--line2);
+  border-radius: var(--r8);
+  overflow: hidden;
+}
+
+/* ── COLONNE TOPICS (giefmod) ── */
+.catacc-topics-col {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--line2);
+  background: var(--surface);
+  overflow: hidden;
+}
+.catacc-topics-header {
+  padding: 11px 15px 9px;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.catacc-topics-label {
+  font-family: var(--fm);
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--t2);
+}
+
+/* Conteneur scroll — giefmod s'injecte ici */
+.catacc-topics-scroll {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line2) transparent;
+}
+.catacc-topics-scroll::-webkit-scrollbar { width: 2px; }
+.catacc-topics-scroll::-webkit-scrollbar-thumb { background: var(--ab); border-radius: 1px; }
+
+/*
+  Styles appliqués aux éléments générés par giefmod_index1.
+  FA génère une liste <ul> / <li> ou une <div> selon la config du module.
+  On cible les enfants directs du scroll pour normaliser.
+*/
+.catacc-topics-scroll .subforumrow,
+.catacc-topics-scroll .row1,
+.catacc-topics-scroll .row2,
+.catacc-topics-scroll li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 9px 15px;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+  transition: background .12s;
+  list-style: none;
+  background: transparent;
+  margin: 0;
+}
+.catacc-topics-scroll .subforumrow:last-child,
+.catacc-topics-scroll .row1:last-child,
+.catacc-topics-scroll .row2:last-child,
+.catacc-topics-scroll li:last-child {
+  border-bottom: none;
+}
+.catacc-topics-scroll .subforumrow:hover,
+.catacc-topics-scroll .row1:hover,
+.catacc-topics-scroll .row2:hover,
+.catacc-topics-scroll li:hover {
+  background: var(--card2);
+}
+
+/* Titre du topic généré par giefmod */
+.catacc-topics-scroll .topictitle,
+.catacc-topics-scroll a.topictitle {
+  font-family: var(--ff);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--t2);
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.3;
+  transition: color .12s;
+}
+.catacc-topics-scroll .subforumrow:hover .topictitle,
+.catacc-topics-scroll li:hover a.topictitle,
+.catacc-topics-scroll .row1:hover .topictitle,
+.catacc-topics-scroll .row2:hover .topictitle { color: var(--t1); }
+
+/* Méta (auteur, date) générée par giefmod */
+.catacc-topics-scroll .gensmall,
+.catacc-topics-scroll .postdetails {
+  font-size: 11px;
+  color: var(--t2);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.catacc-topics-scroll .gensmall a,
+.catacc-topics-scroll .postdetails a { text-decoration: none; }
+
+/* Indicateur latéral (barre colorée à gauche) */
+.catacc-topics-scroll .subforumrow::before,
+.catacc-topics-scroll li::before {
+  content: '';
+  width: 2px;
+  min-height: 14px;
+  align-self: stretch;
+  background: var(--line2);
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* ── COLONNE ÉVÉNEMENT ── */
+.catacc-ev-col {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.catacc-ev-img {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://i.pinimg.com/1200x/6a/4b/aa/6a4baaa4e994a4fde20a3e69c4fc8f5e.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  filter: brightness(.28) saturate(.5);
+  transition: transform .7s cubic-bezier(.4,0,.2,1);
+}
+.catacc-ev-col:hover .catacc-ev-img { transform: scale(1.04); }
+.catacc-ev-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.92), rgba(0,0,0,.3) 50%, transparent);
+}
+.catacc-ev-content {
+  position: relative;
+  z-index: 2;
+  padding: 14px 14px 16px;
+}
+.catacc-ev-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--fm);
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--a);
+  margin-bottom: 8px;
+}
+.catacc-ev-blink {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--a);
+  box-shadow: 0 0 4px var(--a);
+  animation: catacc-blink 2.2s ease-in-out infinite;
+}
+@keyframes catacc-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: .15; }
+}
+.catacc-ev-title {
+  font-family: var(--ff);
+  font-weight: 800;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 12px rgba(0,0,0,.8);
+}
+.catacc-ev-desc {
+  font-size: 11.5px;
+  color: rgba(255,255,255,.6);
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+.catacc-ev-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  background: var(--a);
+  color: #000;
+  font-family: var(--fm);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--r4);
+  transition: filter .2s;
+}
+.catacc-ev-cta:hover { filter: brightness(1.12); }
+
+/* ════════════════════════════════════════════
+   PANNEAU DROIT : actualités + factions + staff
+   ════════════════════════════════════════════ */
+.catacc-panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid var(--line2);
+  border-radius: var(--r8);
+  overflow: hidden;
+}
+
+/* Label commun aux sections du panneau */
+.catacc-panel-label {
+  font-family: var(--fm);
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--t2);
+  margin-bottom: 9px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── ACTUALITÉS ── */
+.catacc-news {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--line);
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 0;
+}
+.catacc-news-list {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line2) transparent;
+}
+.catacc-news-list::-webkit-scrollbar { width: 2px; }
+.catacc-news-list::-webkit-scrollbar-thumb { background: var(--ab); border-radius: 1px; }
+
+.catacc-news-item {
+  display: flex;
+  gap: 9px;
+  cursor: pointer;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+.catacc-news-item:last-child { border-bottom: none; }
+.catacc-news-item:hover .catacc-news-title { color: var(--t1); }
+
+.catacc-news-date {
+  flex-shrink: 0;
+  width: 34px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--line2);
+  border-radius: var(--r4);
+  padding: 4px 2px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+}
+.catacc-news-day {
+  font-family: var(--fm);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--t1);
+}
+.catacc-news-month {
+  font-family: var(--fm);
+  font-size: 8.5px;
+  text-transform: uppercase;
+  color: var(--t2);
+  margin-top: 1px;
+}
+.catacc-news-body { flex: 1; min-width: 0; }
+.catacc-news-title {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--t1);
+  line-height: 1.4;
+  transition: color .15s;
+}
+.catacc-news-excerpt {
+  font-size: 11.5px;
+  color: var(--t2);
+  line-height: 1.5;
+  margin-top: 3px;
+}
+
+/* ── FACTIONS (rôles prédéfinis) ── */
+.catacc-factions {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.catacc-factions-badge {
+  font-family: var(--fm);
+  font-size: 8px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  background: var(--surface);
+  border: 1px solid var(--line2);
+  border-radius: var(--rp);
+  padding: 1px 6px;
+  color: var(--t2);
+}
+.catacc-roles {
+  display: flex;
+  gap: 5px;
+  margin-top: 4px;
+}
+.catacc-role {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  background: var(--surface);
+  border: 1px solid var(--line2);
+  border-radius: var(--r4);
+  cursor: pointer;
+  overflow: visible;
+  text-decoration: none;
+  transition: border-color .2s, background .2s;
+  gap: 6px;
+  padding: 0 4px 6px;
+}
+.catacc-role-img {
+  position: absolute;
+  inset: 0;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: center 7px;
+  filter: brightness(.75) saturate(.3);
+  transition: filter .25s;
+  border-radius: var(--r4);
+  overflow: hidden;
+}
+.catacc-role:hover .catacc-role-img { filter: brightness(.95) saturate(.55); }
+.catacc-role-label {
+  position: relative;
+  z-index: 2;
+  font-family: var(--fm);
+  font-size: 8.5px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: auto;
+  color: var(--t3);
+  transition: color .2s;
+}
+
+/* Coins reticule par faction */
+.catacc-role::before, .catacc-role::after,
+.catacc-role .vb-corner-tr, .catacc-role .vb-corner-bl {
+  content: '';
+  position: absolute;
+  width: 7px; height: 7px;
+  opacity: 0;
+  transition: opacity .18s, width .22s cubic-bezier(.4,0,.2,1), height .22s cubic-bezier(.4,0,.2,1);
+  pointer-events: none;
+  z-index: 3;
+}
+.catacc-role .vb-corner-tr,
+.catacc-role .vb-corner-bl { content: none; }
+
+/* Triomphe */
+.catacc-role.rf-triomphe::before  { top:-2px; left:-2px;  border-radius:2px 0 0 0; border-top:1.5px solid #1298b0; border-left:1.5px solid #1298b0; }
+.catacc-role.rf-triomphe::after   { bottom:-2px; right:-2px; border-radius:0 0 2px 0; border-bottom:1.5px solid #1298b0; border-right:1.5px solid #1298b0; }
+.catacc-role.rf-triomphe:hover    { border-color:rgba(18,152,176,.25); background:rgba(18,152,176,.05); }
+.catacc-role.rf-triomphe:hover .catacc-role-label { color:#1298b0; }
+
+/* EREBOS */
+.catacc-role.rf-erebos::before { top:-2px; left:-2px;   border-radius:2px 0 0 0; border-top:1.5px solid #8b3ef5; border-left:1.5px solid #8b3ef5; }
+.catacc-role.rf-erebos::after  { bottom:-2px; right:-2px; border-radius:0 0 2px 0; border-bottom:1.5px solid #8b3ef5; border-right:1.5px solid #8b3ef5; }
+.catacc-role.rf-erebos:hover   { border-color:rgba(139,62,245,.25); background:rgba(139,62,245,.05); }
+.catacc-role.rf-erebos:hover .catacc-role-label { color:#8b3ef5; }
+
+/* Irréel */
+.catacc-role.rf-irreel::before { top:-2px; left:-2px;   border-radius:2px 0 0 0; border-top:1.5px solid #C22222; border-left:1.5px solid #C22222; }
+.catacc-role.rf-irreel::after  { bottom:-2px; right:-2px; border-radius:0 0 2px 0; border-bottom:1.5px solid #C22222; border-right:1.5px solid #C22222; }
+.catacc-role.rf-irreel:hover   { border-color:rgba(194,34,34,.25); background:rgba(194,34,34,.05); }
+.catacc-role.rf-irreel:hover .catacc-role-label { color:#C22222; }
+
+/* Apparition des coins au hover */
+.catacc-role:hover::before,
+.catacc-role:hover::after { opacity:1; width:10px; height:10px; }
+
+/* ── STAFF ── */
+.catacc-staff {
+  padding: 8px 14px 10px;
+  flex-shrink: 0;
+}
+.catacc-staff-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
+}
+.catacc-staff-card {
+  position: relative;
+  height: 46px;
+  background: var(--surface);
+  border: 1px solid var(--line2);
+  border-radius: var(--r4);
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color .15s;
+}
+.catacc-staff-card:hover { border-color: var(--ab); }
+.catacc-staff-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center top;
+  filter: brightness(.5) saturate(.35);
+  transition: filter .25s;
+}
+.catacc-staff-card:hover .catacc-staff-bg { filter: brightness(.35) saturate(.25); }
+.catacc-staff-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 7px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  background: linear-gradient(to right, rgba(0,0,0,.72) 0%, rgba(0,0,0,.3) 100%);
+  opacity: 0;
+  transition: opacity .2s;
+}
+.catacc-staff-card:hover .catacc-staff-content { opacity: 1; }
+.catacc-staff-name {
+  font-family: var(--ff);
+  font-size: 10px;
+  color: var(--t1);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.catacc-staff-role {
+  font-size: 9px;
+  color: var(--t2);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.catacc-staff-status {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #34c764;
+  box-shadow: 0 0 4px rgba(52,199,100,.7);
+}
+.catacc-staff-status.away {
+  background: #e0a020;
+  box-shadow: 0 0 4px rgba(224,160,32,.6);
+}
+.catacc-staff-status.offline {
+  background: var(--t3);
+  box-shadow: none;
+}
