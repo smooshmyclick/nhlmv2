@@ -2987,21 +2987,13 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 
 /* === SECTION ACCUEIL (catacc) === */
-/* ================================================================
-   NIHILUM — SECTION ACCUEIL (catacc)
-   À coller dans le panneau CSS admin, après le CSS existant.
-   Préfixe exclusif : .catacc-
-   Variables : uniquement celles déjà définies dans :root
-   ================================================================ */
-
-/* ── WRAPPER GLOBAL ── */
 .catacc-dim {
   padding: 0 60px;
   max-width: 1180px;
   margin: 0 auto;
   width: 100%;
 }
-
+ 
 /* ── EN-TÊTE DE SECTION ── */
 .catacc-sec-head {
   display: flex;
@@ -3039,7 +3031,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   transition: color .12s;
 }
 .catacc-sec-link:hover { color: var(--a); }
-
+ 
 /* ── GRILLE PRINCIPALE ── */
 .catacc-zone {
   display: grid;
@@ -3047,7 +3039,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   gap: 10px;
   height: 400px;
 }
-
+ 
 /* ════════════════════════════════════════════
    BLOC GAUCHE : topics + événement
    ════════════════════════════════════════════ */
@@ -3058,7 +3050,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   border-radius: var(--r8);
   overflow: hidden;
 }
-
+ 
 /* ── COLONNE TOPICS (giefmod) ── */
 .catacc-topics-col {
   display: flex;
@@ -3079,53 +3071,74 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   text-transform: uppercase;
   color: var(--t2);
 }
-
-/* Conteneur scroll — giefmod s'injecte ici */
+ 
+/* Conteneur scroll — module FA injecté ici */
 .catacc-topics-scroll {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: var(--line2) transparent;
 }
 .catacc-topics-scroll::-webkit-scrollbar { width: 2px; }
 .catacc-topics-scroll::-webkit-scrollbar-thumb { background: var(--ab); border-radius: 1px; }
-
-/*
-  Styles appliqués aux éléments générés par giefmod_index1.
-  FA génère une liste <ul> / <li> ou une <div> selon la config du module.
-  On cible les enfants directs du scroll pour normaliser.
-*/
-.catacc-topics-scroll .subforumrow,
-.catacc-topics-scroll .row1,
-.catacc-topics-scroll .row2,
-.catacc-topics-scroll li {
+ 
+/* ── Neutralisation du wrapper module FA ── */
+.catacc-topics-scroll .module {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* Masquer le titre h3 du module (on a déjà notre label) */
+.catacc-topics-scroll .module .h3 { display: none !important; }
+ 
+/* Neutraliser le marquee : on le transforme en bloc statique scrollable */
+.catacc-topics-scroll #comments_scroll_div,
+.catacc-topics-scroll .marquee {
+  overflow: visible !important;
+  height: auto !important;
+  animation: none !important;
+}
+.catacc-topics-scroll .js-marquee-wrapper {
+  animation: none !important;
+  margin-top: 0 !important;
+  transform: none !important;
+}
+.catacc-topics-scroll .js-marquee {
+  float: none !important;
+  margin: 0 !important;
+}
+ 
+/* ── Chaque ligne de sujet ── */
+.catacc-topics-scroll .mod-recent-row {
   display: flex;
-  align-items: flex-start;
-  gap: 9px;
+  flex-direction: column;
+  gap: 3px;
   padding: 9px 15px;
   border-bottom: 1px solid var(--line);
-  cursor: pointer;
   transition: background .12s;
-  list-style: none;
-  background: transparent;
-  margin: 0;
+  position: relative;
+  cursor: pointer;
 }
-.catacc-topics-scroll .subforumrow:last-child,
-.catacc-topics-scroll .row1:last-child,
-.catacc-topics-scroll .row2:last-child,
-.catacc-topics-scroll li:last-child {
-  border-bottom: none;
+.catacc-topics-scroll .mod-recent-row:last-child { border-bottom: none; }
+.catacc-topics-scroll .mod-recent-row:hover { background: var(--card2); }
+ 
+/* Barre indicatrice à gauche */
+.catacc-topics-scroll .mod-recent-row::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  bottom: 9px;
+  width: 2px;
+  background: var(--line2);
+  border-radius: 2px;
 }
-.catacc-topics-scroll .subforumrow:hover,
-.catacc-topics-scroll .row1:hover,
-.catacc-topics-scroll .row2:hover,
-.catacc-topics-scroll li:hover {
-  background: var(--card2);
-}
-
-/* Titre du topic généré par giefmod */
-.catacc-topics-scroll .topictitle,
-.catacc-topics-scroll a.topictitle {
+ 
+/* ── Titre du sujet ── */
+.catacc-topics-scroll .mod-recent-title {
   font-family: var(--ff);
   font-size: 13px;
   font-weight: 700;
@@ -3138,40 +3151,36 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   line-height: 1.3;
   transition: color .12s;
 }
-.catacc-topics-scroll .subforumrow:hover .topictitle,
-.catacc-topics-scroll li:hover a.topictitle,
-.catacc-topics-scroll .row1:hover .topictitle,
-.catacc-topics-scroll .row2:hover .topictitle { color: var(--t1); }
-
-/* Méta (auteur, date) générée par giefmod */
-.catacc-topics-scroll .gensmall,
-.catacc-topics-scroll .postdetails {
-  font-size: 11px;
-  color: var(--t2);
+.catacc-topics-scroll .mod-recent-row:hover .mod-recent-title { color: var(--t1); }
+ 
+/* ── Méta (heure + auteur) ── */
+.catacc-topics-scroll .mod-recent-info {
   display: flex;
   align-items: center;
-  gap: 4px;
-  margin-top: 1px;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--t2);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.catacc-topics-scroll .gensmall a,
-.catacc-topics-scroll .postdetails a { text-decoration: none; }
-
-/* Indicateur latéral (barre colorée à gauche) */
-.catacc-topics-scroll .subforumrow::before,
-.catacc-topics-scroll li::before {
-  content: '';
-  width: 2px;
-  min-height: 14px;
-  align-self: stretch;
-  background: var(--line2);
-  border-radius: 2px;
-  flex-shrink: 0;
-  margin-top: 3px;
+.catacc-topics-scroll .mod-recent-time,
+.catacc-topics-scroll .mod-recent-author {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
 }
-
+.catacc-topics-scroll .mod-recent-info i {
+  font-size: 10px;
+  opacity: .55;
+}
+.catacc-topics-scroll .mod-recent-author a { text-decoration: none; }
+.catacc-topics-scroll .mod-recent-author a span,
+.catacc-topics-scroll .mod-recent-author a strong {
+  font-weight: 500 !important;
+  font-size: 11px !important;
+}
+ 
 /* ── COLONNE ÉVÉNEMENT ── */
 .catacc-ev-col {
   position: relative;
@@ -3255,7 +3264,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   transition: filter .2s;
 }
 .catacc-ev-cta:hover { filter: brightness(1.12); }
-
+ 
 /* ════════════════════════════════════════════
    PANNEAU DROIT : actualités + factions + staff
    ════════════════════════════════════════════ */
@@ -3267,7 +3276,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   border-radius: var(--r8);
   overflow: hidden;
 }
-
+ 
 /* Label commun aux sections du panneau */
 .catacc-panel-label {
   font-family: var(--fm);
@@ -3280,7 +3289,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   align-items: center;
   gap: 8px;
 }
-
+ 
 /* ── ACTUALITÉS ── */
 .catacc-news {
   padding: 11px 14px;
@@ -3299,7 +3308,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 .catacc-news-list::-webkit-scrollbar { width: 2px; }
 .catacc-news-list::-webkit-scrollbar-thumb { background: var(--ab); border-radius: 1px; }
-
+ 
 .catacc-news-item {
   display: flex;
   gap: 9px;
@@ -3308,7 +3317,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 .catacc-news-item:last-child { border-bottom: none; }
 .catacc-news-item:hover .catacc-news-title { color: var(--t1); }
-
+ 
 .catacc-news-date {
   flex-shrink: 0;
   width: 34px;
@@ -3350,7 +3359,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   line-height: 1.5;
   margin-top: 3px;
 }
-
+ 
 /* ── FACTIONS (rôles prédéfinis) ── */
 .catacc-factions {
   padding: 8px 14px;
@@ -3415,7 +3424,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   color: var(--t3);
   transition: color .2s;
 }
-
+ 
 /* Coins reticule par faction */
 .catacc-role::before, .catacc-role::after,
 .catacc-role .vb-corner-tr, .catacc-role .vb-corner-bl {
@@ -3429,29 +3438,29 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 .catacc-role .vb-corner-tr,
 .catacc-role .vb-corner-bl { content: none; }
-
+ 
 /* Triomphe */
 .catacc-role.rf-triomphe::before  { top:-2px; left:-2px;  border-radius:2px 0 0 0; border-top:1.5px solid #1298b0; border-left:1.5px solid #1298b0; }
 .catacc-role.rf-triomphe::after   { bottom:-2px; right:-2px; border-radius:0 0 2px 0; border-bottom:1.5px solid #1298b0; border-right:1.5px solid #1298b0; }
 .catacc-role.rf-triomphe:hover    { border-color:rgba(18,152,176,.25); background:rgba(18,152,176,.05); }
 .catacc-role.rf-triomphe:hover .catacc-role-label { color:#1298b0; }
-
+ 
 /* EREBOS */
 .catacc-role.rf-erebos::before { top:-2px; left:-2px;   border-radius:2px 0 0 0; border-top:1.5px solid #8b3ef5; border-left:1.5px solid #8b3ef5; }
 .catacc-role.rf-erebos::after  { bottom:-2px; right:-2px; border-radius:0 0 2px 0; border-bottom:1.5px solid #8b3ef5; border-right:1.5px solid #8b3ef5; }
 .catacc-role.rf-erebos:hover   { border-color:rgba(139,62,245,.25); background:rgba(139,62,245,.05); }
 .catacc-role.rf-erebos:hover .catacc-role-label { color:#8b3ef5; }
-
+ 
 /* Irréel */
 .catacc-role.rf-irreel::before { top:-2px; left:-2px;   border-radius:2px 0 0 0; border-top:1.5px solid #C22222; border-left:1.5px solid #C22222; }
 .catacc-role.rf-irreel::after  { bottom:-2px; right:-2px; border-radius:0 0 2px 0; border-bottom:1.5px solid #C22222; border-right:1.5px solid #C22222; }
 .catacc-role.rf-irreel:hover   { border-color:rgba(194,34,34,.25); background:rgba(194,34,34,.05); }
 .catacc-role.rf-irreel:hover .catacc-role-label { color:#C22222; }
-
+ 
 /* Apparition des coins au hover */
 .catacc-role:hover::before,
 .catacc-role:hover::after { opacity:1; width:10px; height:10px; }
-
+ 
 /* ── STAFF ── */
 .catacc-staff {
   padding: 8px 14px 10px;
