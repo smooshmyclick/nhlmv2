@@ -2681,11 +2681,6 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
  
 /* Card Carte */
 .catgns-card-map { background: rgba(255,255,255,.03); }
-.catgns-card-map::before {
-  background: linear-gradient(to right, var(--a), transparent);
-  opacity: .6;
-  transform: scaleX(1);
-}
 .catgns-card-map .catgns-card-ico { color: var(--a); opacity: .8; }
 .catgns-card-map .catgns-card-ico svg { width: 15px; height: 15px; }
 .catgns-card-map .catgns-card-title {
