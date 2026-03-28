@@ -3142,6 +3142,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   color: var(--t2);
   text-decoration: none;
   display: block;
+  word-break: initial;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
