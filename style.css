@@ -3141,7 +3141,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   font-family: var(--ff);
   font-size: 13px;
   font-weight: 700;
-  color: var(--t2);
+  color: var(--t1);
   text-decoration: none;
   display: block;
   word-break: initial;
@@ -3151,7 +3151,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   line-height: 1.3;
   transition: color .12s;
 }
-.catacc-topics-scroll .mod-recent-row:hover .mod-recent-title { color: var(--t1); }
+.catacc-topics-scroll .mod-recent-row:hover .mod-recent-title { color: var(--t0); }
 
 a:not(.mod-recent-title):hover { background-size: 0px; color: none; }
  
