@@ -2012,7 +2012,6 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
   align-items: center;
   justify-content: center;
   padding: 0 5px;
-  box-shadow: 0 0 8px rgba(164,174,28,.3);
 }
 #monitor-badge.visible { display: flex; }
 
