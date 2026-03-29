@@ -2772,14 +2772,12 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 .caviarde:hover .caviarde-inner::after {
   opacity: 0;
 }
- 
-/* ── BLOC VERROUILLÉ ── */
- 
+
+/* BLOC VERROUILLÉ */
 /* Checkbox de contrôle — invisible, hors flux */
 .verrou-toggle {
   display: none;
 }
- 
 .verrou {
   width: 90%;
   margin: 0 auto;
@@ -2788,8 +2786,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   overflow: hidden;
   background: var(--surface);
 }
- 
-/* État verrouillé : head visible, body masqué */
+/* État verrouillé */
 .verrou-head {
   display: flex;
   flex-direction: column;
@@ -2816,7 +2813,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 .verrou-head .verrou-title::before {
   content: attr(data-titre);
 }
-/* Sous-titre statique */
+
 .verrou-head .verrou-sub::before {
   content: 'Contenu classifié · Cliquer pour déverrouiller';
 }
@@ -2860,7 +2857,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 .verrou-btn:hover {
   filter: brightness(1.1);
 }
- 
+
 /* Corps masqué par défaut */
 .verrou-body {
   display: none;
@@ -2870,15 +2867,15 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   color: rgba(240,236,228,.85);
   border-top: 1px solid var(--line);
 }
- 
-/* ── Basculement via :has() — zéro JS ── */
-.verrou:has(.verrou-toggle:checked) .verrou-head {
+
+/* ── Basculement via ~ — zéro JS, compatible tous navigateurs ── */
+.verrou-toggle:checked ~ .verrou-head {
   display: none;
 }
-.verrou:has(.verrou-toggle:checked) .verrou-body {
+.verrou-toggle:checked ~ .verrou-body {
   display: block;
 }
- 
+
 /* Barre déclassifié */
 .verrou-bar {
   display: flex;
