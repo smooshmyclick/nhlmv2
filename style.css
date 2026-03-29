@@ -3153,7 +3153,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 .catacc-topics-scroll .mod-recent-row:hover .mod-recent-title { color: var(--t0); }
 
-a:not(.mod-recent-title):hover { background-size: 0px; color: none; }
+a:not(.mod-recent-title):hover { background-size: 0px; color: transparent; }
  
 /* Méta (heure + auteur) */
 .catacc-topics-scroll .mod-recent-info {
