@@ -3159,7 +3159,7 @@ a:not(.mod-recent-title):hover { background-size: 0px; color: none; }
 .catacc-topics-scroll .mod-recent-info {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   font-size: 11px;
   color: var(--t2);
   white-space: nowrap;
@@ -3170,7 +3170,7 @@ a:not(.mod-recent-title):hover { background-size: 0px; color: none; }
 .catacc-topics-scroll .mod-recent-author {
   display: inline-flex;
   align-items: center;
-  gap: 3px;
+  gap: 4px;
 }
 .catacc-topics-scroll .mod-recent-info i {
   display: none;
@@ -3183,9 +3183,7 @@ a:not(.mod-recent-title):hover { background-size: 0px; color: none; }
 }
 
 .catacc-topics-scroll .mod-recent-author::before {
-  content: "par ";
-  margin: 0 4px;
-  opacity: 0.8;
+  content: "par";
 }
  
 /* --- COLONNE ÉVÉNEMENT --- */
