@@ -3176,14 +3176,19 @@ a:not(.mod-recent-title):hover { background-size: 0px; color: none; }
   gap: 3px;
 }
 .catacc-topics-scroll .mod-recent-info i {
-  font-size: 10px;
-  opacity: .55;
+  display: none;
 }
 .catacc-topics-scroll .mod-recent-author a { text-decoration: none; }
 .catacc-topics-scroll .mod-recent-author a span,
 .catacc-topics-scroll .mod-recent-author a strong {
   font-weight: 500 !important;
   font-size: 11px !important;
+}
+
+.catacc-topics-scroll .mod-recent-author::before {
+  content: "par ";
+  margin: 0 4px;
+  opacity: 0.8;
 }
  
 /* --- COLONNE ÉVÉNEMENT --- */
