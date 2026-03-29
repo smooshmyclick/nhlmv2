@@ -2738,7 +2738,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 /* Caviardé (spoiler inline) */
 .caviarde {
   display: inline;
-  cursor: pointer;
+  cursor: default;
 }
 .caviarde-inner {
   display: inline;
@@ -2764,18 +2764,22 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   pointer-events: none;
   transition: opacity .2s;
 }
-/* Reveal au hover */
-.caviarde:hover .caviarde-inner,
-.caviarde.revealed .caviarde-inner {
+/* Reveal au hover uniquement */
+.caviarde:hover .caviarde-inner {
   background: transparent;
   color: inherit;
 }
-.caviarde:hover .caviarde-inner::after,
-.caviarde.revealed .caviarde-inner::after {
+.caviarde:hover .caviarde-inner::after {
   opacity: 0;
 }
  
 /* ── BLOC VERROUILLÉ ── */
+ 
+/* Checkbox de contrôle — invisible, hors flux */
+.verrou-toggle {
+  display: none;
+}
+ 
 .verrou {
   width: 90%;
   margin: 0 auto;
@@ -2784,6 +2788,8 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   overflow: hidden;
   background: var(--surface);
 }
+ 
+/* État verrouillé : head visible, body masqué */
 .verrou-head {
   display: flex;
   flex-direction: column;
@@ -2792,7 +2798,6 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   gap: 10px;
   padding: 24px 20px;
   background: var(--deep);
-  cursor: pointer;
   transition: background .15s;
   position: relative;
 }
@@ -2855,6 +2860,8 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 .verrou-btn:hover {
   filter: brightness(1.1);
 }
+ 
+/* Corps masqué par défaut */
 .verrou-body {
   display: none;
   padding: 16px;
@@ -2863,9 +2870,16 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   color: rgba(240,236,228,.85);
   border-top: 1px solid var(--line);
 }
-.verrou-body.open {
+ 
+/* ── Basculement via :has() — zéro JS ── */
+.verrou:has(.verrou-toggle:checked) .verrou-head {
+  display: none;
+}
+.verrou:has(.verrou-toggle:checked) .verrou-body {
   display: block;
 }
+ 
+/* Barre déclassifié */
 .verrou-bar {
   display: flex;
   align-items: center;
