@@ -2991,7 +2991,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   padding: 0 20px;
 }
  
-/* ── EN-TÊTE DE SECTION ── */
+/* --- EN-TÊTE DE SECTION --- */
 .catacc-sec-head {
   display: flex;
   align-items: baseline;
@@ -3029,7 +3029,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 .catacc-sec-link:hover { color: var(--a); }
  
-/* ── GRILLE PRINCIPALE ── */
+/* --- GRILLE PRINCIPALE --- */
 .catacc-zone {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -3037,18 +3037,15 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   height: 400px;
 }
  
-/* ════════════════════════════════════════════
-   BLOC GAUCHE : topics + événement
-   ════════════════════════════════════════════ */
+/* --- BLOC GAUCHE : topics + événement --- */
 .catacc-left {
   display: grid;
-  grid-template-columns: 1fr 220px;
+  grid-template-columns: 1fr 280px;
   border: 1px solid var(--line2);
   border-radius: var(--r8);
   overflow: hidden;
 }
  
-/* ── COLONNE TOPICS (giefmod) ── */
 .catacc-topics-col {
   display: flex;
   flex-direction: column;
@@ -3069,7 +3066,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   color: var(--t2);
 }
  
-/* Conteneur scroll — module FA injecté ici */
+/* Conteneur scroll */
 .catacc-topics-scroll {
   flex: 1;
   overflow-y: auto;
@@ -3108,7 +3105,6 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   margin: 0 !important;
 }
  
-/* ── Chaque ligne de sujet ── */
 .catacc-topics-scroll .mod-recent-row {
   display: flex;
   flex-direction: column;
@@ -3121,8 +3117,6 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 .catacc-topics-scroll .mod-recent-row:last-child { border-bottom: none; }
 .catacc-topics-scroll .mod-recent-row:hover { background: var(--card2); }
- 
-/* Barre indicatrice à gauche */
 .catacc-topics-scroll .mod-recent-row::before {
   content: '';
   position: absolute;
@@ -3134,7 +3128,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   border-radius: 2px;
 }
  
-/* ── Titre du sujet ── */
+/* Titre du sujet */
 .catacc-topics-scroll .mod-recent-title {
   font-family: var(--ff);
   font-size: 13px;
@@ -3151,7 +3145,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 .catacc-topics-scroll .mod-recent-row:hover .mod-recent-title { color: var(--t1); }
  
-/* ── Méta (heure + auteur) ── */
+/* Méta (heure + auteur) */
 .catacc-topics-scroll .mod-recent-info {
   display: flex;
   align-items: center;
@@ -3179,7 +3173,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   font-size: 11px !important;
 }
  
-/* ── COLONNE ÉVÉNEMENT ── */
+/* --- COLONNE ÉVÉNEMENT --- */
 .catacc-ev-col {
   position: relative;
   overflow: hidden;
@@ -3262,9 +3256,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 .catacc-ev-cta:hover { filter: brightness(1.12); }
  
-/* ════════════════════════════════════════════
-   PANNEAU DROIT : actualités + factions + staff
-   ════════════════════════════════════════════ */
+/* --- PANNEAU DROIT : actualités + factions + staff --- */
 .catacc-panel {
   display: flex;
   flex-direction: column;
@@ -3287,7 +3279,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   gap: 8px;
 }
  
-/* ── ACTUALITÉS ── */
+/* --- ACTUALITÉS --- */
 .catacc-news {
   padding: 11px 14px;
   border-bottom: 1px solid var(--line);
@@ -3459,7 +3451,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 .catacc-role:hover::before,
 .catacc-role:hover::after { opacity:1; width:10px; height:10px; }
  
-/* ── STAFF ── */
+/* --- STAFF --- */
 .catacc-staff {
   padding: 8px 14px 10px;
   flex-shrink: 0;
