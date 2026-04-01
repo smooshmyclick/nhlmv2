@@ -347,7 +347,6 @@
   padding: 0;
 }
 
-/* On réutilise .tb-action mais dans un contexte flex plein-panneau */
 .profile-buttons .tb-action {
   flex: 1;
   justify-content: center;
