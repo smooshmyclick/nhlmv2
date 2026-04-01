@@ -1401,8 +1401,6 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
 /* ===== TITRE DES PAGES : GLOBAL (pages, blogs, memberlist) =========================================== */
 .nhlm-pt {
   position: relative;
-  height: 120px;
-  overflow: hidden;
   background: var(--deep);
   border-bottom: 1px solid var(--line);
   display: flex;
