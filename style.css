@@ -359,7 +359,7 @@
 .profile-buttons .tb-action:last-child {
   border-right: none;
 }
-.profile-buttons .tb-action.nav-logout:hover {
+.profile-buttons .nav-logout:hover {
   color: #e05050;
 }
 
