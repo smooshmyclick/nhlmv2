@@ -1398,10 +1398,8 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
   height: 13px;
 }
 
-/* ===== 9. PAGE MEMBRES =========================================== */
-/* ── Hero page membres ──────────────────────────────────────────── */
-
-.ml-hero {
+/* ===== TITRE DES PAGES : GLOBAL (pages, blogs, memberlist) =========================================== */
+.nhlm-pt {
   position: relative;
   height: 120px;
   overflow: hidden;
@@ -1411,7 +1409,7 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
   align-items: flex-end;
   padding: 0 32px 32px;
 }
-.ml-hero-accent {
+.nhlm-accent {
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 1px;
@@ -1419,14 +1417,14 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
   opacity: .5;
   transition: background .35s;
 }
-.ml-hero-content {
+.nhlm-content {
   position: relative;
   z-index: 2;
 }
-.ml-hero-title {
+.nhlm-title {
   font-size:38px !important;
 }
-.ml-hero-eyebrow {
+.nhlm-eyebrow {
   font-family: var(--fm);
   font-size: 9.5px;
   letter-spacing: .38em;
@@ -1438,7 +1436,7 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
   gap: 12px;
   transition: color .35s;
 }
-.ml-hero-eyebrow::before {
+.nhlm-eyebrow::before {
   content: '';
   width: 24px;
   height: 1px;
@@ -1446,7 +1444,7 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
   flex-shrink: 0;
   transition: background .35s;
 }
-.ml-hero-sub {
+.nhlm-sub {
   font-family: var(--fm);
   font-size: 9.5px;
   letter-spacing: .22em;
@@ -1455,8 +1453,8 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
   margin-top: 10px;
 }
 
+/* ===== 9. PAGE MEMBRES =========================================== */
 /* ── Toolbar membres — éléments dans .page-actions ──────────────── */
-
 /* Champ de recherche */
 .ml-search {
   display: flex;
