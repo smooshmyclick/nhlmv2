@@ -1451,7 +1451,103 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
   margin-top: 10px;
 }
 
-/* ===== 9. PAGE MEMBRES =========================================== */
+/* ===== 7.4 LISTE DES MEMBRE =========================================== */
+/* --- Template : memberlist_body ----------------- */
+/* Barre de recherche et de tri des membres — héritée de .page-actions (§ 2.3) */
+form[action="/memberlist"] {
+  width: 100%;
+}
+
+/* Grille de cartes */
+.userlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 8px;
+}
+
+/* ── Carte membre ── */
+.userlist_profil {
+  position: relative;
+  border-radius: var(--r8);
+  overflow: hidden;
+  aspect-ratio: 3/5;
+  border: 1px solid var(--line);
+  background: var(--deep);
+  display: block;
+  grid-template-columns: unset;
+  gap: unset;
+  padding: 0;
+}
+
+/* Photo — .userlist_avatar couvre toute la carte */
+.userlist_profil .userlist_avatar {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.userlist_profil .userlist_avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: brightness(.88) saturate(.85);
+  transition: transform .5s cubic-bezier(.4,0,.2,1), filter .3s;
+  /* reset de la règle générique aspect-ratio: 5/8 ci-dessous */
+  aspect-ratio: unset;
+}
+.userlist_profil:hover .userlist_avatar img {
+  transform: scale(1.01);
+  filter: brightness(1) saturate(1);
+}
+
+/* Règle générique avatar (hors carte) */
+.userlist_avatar img {
+  width: 75px;
+  aspect-ratio: 5/8;
+}
+
+/* Infos overlay bas */
+.userlist_infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.userlist_profil .userlist_infos {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  z-index: 2;
+  padding: 14px 13px 13px;
+  display: block;
+  height: auto;
+}
+
+/* Pseudo */
+.userlist_pseudo {
+  font-size: var(--medium-size);
+}
+.userlist_profil .userlist_pseudo {
+  display: block;
+  font-family: var(--ff);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.2;
+  text-shadow: 0 1px 10px rgba(0,0,0,.9);
+  margin-bottom: 8px;
+  word-break: break-word;
+  /* neutralise le soulignement hover du lien global */
+  background: none;
+}
+.userlist_profil .userlist_pseudo:hover {
+  background: none;
+}
+
+/* Conteneur contacts (footer carte) */
+.userlist_contact {
+  margin-top: 4px;
+}
+
 /* ── Toolbar membres — éléments dans .page-actions ──────────────── */
 /* Champ de recherche */
 .ml-search {
