@@ -3438,11 +3438,12 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 .catacc-news-body { flex: 1; min-width: 0; }
 .catacc-news-title {
-  font-size: 12.5px;
-  font-weight: 600;
+  font-size: var(--r7);
+  font-weight: 200;
   color: var(--t1);
   line-height: 1.4;
   transition: color .15s;
+  font-family: var(--ff);
 }
 .catacc-news-excerpt {
   font-size: 11.5px;
