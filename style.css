@@ -3267,8 +3267,8 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 .catacc-topics-scroll .mod-recent-author a { text-decoration: none; }
 .catacc-topics-scroll .mod-recent-author a span,
 .catacc-topics-scroll .mod-recent-author a strong {
-  font-weight: 500 !important;
   font-size: 11px !important;
+  letter-spacing: 0.05em;
 }
 
 .catacc-topics-scroll .mod-recent-author::before {
