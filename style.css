@@ -3231,7 +3231,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 .catacc-topics-scroll .mod-recent-title {
   font-family: var(--ff);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 200;
   color: var(--t1);
   text-decoration: none;
   display: block;
