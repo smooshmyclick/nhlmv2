@@ -3230,7 +3230,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 /* Titre du sujet */
 .catacc-topics-scroll .mod-recent-title {
   font-family: var(--ff);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 200;
   color: var(--t1);
   text-decoration: none;
