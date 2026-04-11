@@ -1,3 +1,68 @@
+/* ==== LIBRE SERVICE === */
+/* LB : COMMUN */
+.rp-text{font-size:13.5px;line-height:1.5;padding:28px 30px;}
+.rp-footer{display:flex;padding:9px 18px;border-top:1px solid var(--line);background:rgba(0,0,0,.18);}
+.rp-fb{padding:4px 10px;font-family:var(--fm);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--t3);border:1px solid var(--line);border-radius:var(--r8);}
+
+/* LB : NEX */
+.nex{overflow:hidden;border-radius:var(--r8);border:1px solid var(--line2);background:var(--card);}
+.nex-banner{position:relative;overflow:hidden;}
+.nex-banner img{width:100%;height:210px;object-fit:cover;object-position:center 30%;display:block;filter:brightness(.52) saturate(.55);}
+.nex-banner-gard{position:absolute;inset:0;background:linear-gradient(to top,var(--card) 0%,rgba(35,35,35,.5) 30%,transparent 60%);}
+.nex-tz{position:absolute;bottom:0;left:0;right:0;padding:16px 20px 14px;}
+.nex-title{display:block;font-family:var(--ff);font-weight:800;font-size:18px;color:var(--t1);line-height:1.2;margin-bottom:4px;}
+.nex-auth{display:block;font-family:var(--fm);font-size:10px;color:var(--a);letter-spacing:.1em;margin-bottom:8px;}
+.nex-line{height:1px;background:linear-gradient(to right,var(--ab),transparent);}
+
+/* LB : ECHO */
+.echo{overflow:hidden;border-radius:var(--r8);border:1px solid var(--line2);background:var(--card);}
+.echo-banner{position:relative;overflow:hidden;}
+.echo-banner img{width:100%;height:210px;object-fit:cover;object-position:center 40%;display:block;filter:brightness(.52) saturate(.55);}
+.echo-banner-ov{position:absolute;inset:0;background:linear-gradient(to top,var(--card) 0%,rgba(35,35,35,.55) 32%,transparent 62%);}
+.echo-accent-top{position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,var(--a) 30%,var(--a) 70%,transparent);opacity:.65;}
+.echo-body{position:absolute;bottom:0;left:0;right:0;padding:18px 22px 16px;}
+.echo-eb{font-family:var(--fm);font-size:8px;letter-spacing:.32em;text-transform:uppercase;color:var(--a);margin-bottom:5px;display:flex;align-items:center;gap:8px;}
+.echo-eb::before{content:'';width:12px;height:1px;background:var(--a);}
+.echo-title{font-family:var(--ff);font-weight:800;font-size:22px;color:#fff;line-height:1.1;letter-spacing:-.02em;margin-bottom:11px;}
+.echo-footer-row{display:flex;align-items:center;justify-content:space-between;padding-top:9px;border-top:1px solid rgba(255,255,255,.09);}
+.echo-avas{display:flex;}
+.echo-ava{width:42px;height:42px;border-radius:50%;border:2px solid var(--deep);background:var(--surface);overflow:hidden;margin-left:-6px;}
+.echo-ava:first-child{margin-left:0;}
+.echo-ava img{width:100%;height:100%;object-fit:cover;display:block;}
+.echo-pnames{font-family:var(--fm);font-size:10px;color:rgba(255,255,255,.45);margin-left:9px;}
+.echo-tag{font-family:var(--fm);font-size:8px;letter-spacing:.12em;text-transform:uppercase;padding:2px 8px;border-radius:999px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.45);}
+
+/* LB : GLITCH */
+.glitch{overflow:hidden;border-radius:var(--r8);border:1px solid var(--line2);background:var(--card);}
+.glitch-banner{position:relative;overflow:hidden;}
+.glitch-banner img{width:100%;height:200px;object-fit:cover;display:block;filter:brightness(.52) saturate(.55);}
+.glitch-scanlines{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.06) 3px,rgba(0,0,0,.06) 4px);z-index:2;pointer-events:none;}
+.glitch-ov{position:absolute;inset:0;background:linear-gradient(to top,var(--card) 0%,rgba(35,35,35,.6) 38%,transparent 72%);z-index:1;}
+.glitch-body{position:absolute;bottom:0;left:0;right:0;z-index:3;padding:14px 18px 12px;display:flex;align-items:flex-end;justify-content:space-between;}
+.glitch-left{}
+.glitch-tag-label{font-family:var(--fm);font-size:8px;letter-spacing:.3em;text-transform:uppercase;color:var(--a);margin-bottom:4px;}
+.glitch-title{font-family:var(--ff);font-weight:800;font-size:16px;color:var(--t1);line-height:1.2;margin-bottom:3px;}
+.glitch-right{text-align:right;flex-shrink:0;padding-left:12px;}
+.glitch-num{font-family:var(--ff);font-size:28px;font-weight:800;color:var(--a);line-height:1;letter-spacing:-.03em;}
+.glitch-num-label{font-family:var(--fm);font-size:8px;color:var(--t3);letter-spacing:.2em;text-transform:uppercase;}
+
+/* LB : VOID */
+.void-wrap{overflow:hidden;border-radius:var(--r8);border:1px solid var(--line2);background:var(--card);}
+.void-banner{position:relative;overflow:hidden;}
+.void-banner img{width:100%;height:170px;object-fit:cover;display:block;filter:brightness(.6) saturate(.6);}
+.void-banner::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 25%,var(--card) 100%);}
+.void-inner-border{margin:0 16px;height:1px;background:linear-gradient(to right,transparent,var(--ab) 30%,var(--ab) 70%,transparent);}
+
+/* LB : ORBIT */
+.orbit{overflow:hidden;border-radius:var(--r8);border:1px solid var(--ab);background:var(--card);position:relative;}
+.orbit-accent{position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--a) 30%,var(--a) 70%,transparent);}
+.orbit-grid{position:absolute;top:0;left:0;right:0;height:90px;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(to bottom,black,transparent);pointer-events:none;}
+.orbit-head{position:relative;z-index:2;padding:22px 24px 20px;border-bottom:1px solid var(--line);}
+.orbit-eb{font-family:var(--fm);font-size:8px;letter-spacing:.38em;text-transform:uppercase;color:var(--a);margin-bottom:7px;display:flex;align-items:center;gap:8px;}
+.orbit-eb::before{content:'';width:12px;height:1px;background:var(--a);}
+.orbit-title{font-family:var(--ff);font-weight:800;font-size:22px;color:var(--t1);letter-spacing:-.02em;line-height:1.1;margin-bottom:4px;}
+.orbit-sub{font-family:var(--fm);font-size:10px;color:var(--t2);}
+
 /* === NHLM-CSS : BARRE DE NAVIGATION ET SIDEBAR ================ */
 /* --- BARRE DE NAVIGATION --- */
 .topbar {
