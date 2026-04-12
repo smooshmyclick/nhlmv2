@@ -2757,8 +2757,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 .catgns-cta-text {
   font-family: var(--ff);
   font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
+  font-size: 12px;
   color: var(--t1);
   line-height: 1.7;
   padding-top: 16px;
@@ -2769,7 +2768,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   font-family: var(--ff);
   font-style: normal;
   color: var(--a);
-  font-size: 14px;
+  font-size: 12px;
   display: block;
   margin-top: 8px;
   transition: color .35s;
