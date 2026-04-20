@@ -2108,7 +2108,6 @@ form[action="/memberlist"] {
 #monitor-toggle:hover {
   background: linear-gradient(135deg, var(--ab) 0%, var(--deep) 100%);
   border-color: var(--a);
-  box-shadow: 0 0 16px rgba(164,174,28,.08), inset 0 1px 0 rgba(255,255,255,.06);
 }
 
 .monitor-toggle-icon {
