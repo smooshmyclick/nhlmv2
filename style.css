@@ -1154,6 +1154,7 @@ button[onglet].active {
 }
 .notif_avatar {
   width: 32px;
+  height: 32px;
   --round: var(--ro);
   background: var(--surface);
   border: 1px solid var(--line2);
@@ -1223,6 +1224,12 @@ button[onglet].active {
   opacity: 0;
   filter: blur(4px);
   transition: all .4s cubic-bezier(.4,0,.2,1);
+}
+.notification.alert .notif_avatar img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 .notification.alert.up {
   transform: translateY(0);
