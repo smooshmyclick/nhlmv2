@@ -1862,7 +1862,7 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
 }
 
 /* ===== TITRE DES PAGES : GLOBAL (pages, blogs, memberlist) =========================================== */
-.nhlm-pt {
+.nhlm-page {
   position: relative;
   background: var(--deep);
   border-bottom: 1px solid var(--line);
@@ -1870,22 +1870,14 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
   align-items: flex-end;
   padding: 0 32px 32px;
 }
-.nhlm-accent {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--a) 30%, var(--a) 70%, transparent);
-  opacity: .5;
-  transition: background .35s;
-}
-.nhlm-content {
+.nhlm-page-content {
   position: relative;
   z-index: 2;
 }
 .nhlm-title {
   font-size:38px !important;
 }
-.nhlm-eyebrow {
+.nhlm-page-eb {
   font-family: var(--fm);
   font-size: 9.5px;
   letter-spacing: .38em;
