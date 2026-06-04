@@ -1153,7 +1153,7 @@ button[onglet].active {
   flex-shrink: 0;
 }
 .notif_avatar {
-  --size: 32px;
+  width: 32px;
   --round: var(--ro);
   background: var(--surface);
   border: 1px solid var(--line2);
