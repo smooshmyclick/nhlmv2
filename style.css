@@ -309,8 +309,17 @@ a.sceditor-button {
   text-align: center;
 }
 
-/* --- BBCode spéciaux --- */ 
-/* Balise code inline */
+/* --- Menu BBcode Nihilum --- */
+.nihilum-panel {
+  background: var(--card2);
+  padding: 8px !important;
+  border-bottom: 1px solid var(--line);
+} 
+
+.nihilum-tag-btn { margin: 0 3px; padding: 5px; cursor: pointer !important; }
+.nihilum-tag-btn:hover { border: none !important; }
+
+/* BBCode spéciaux */ 
 .codeline {
   font-family: var(--fm);
   font-size: 0.9em;
@@ -318,6 +327,42 @@ a.sceditor-button {
   border-radius: 4px;
   background: var(--deep);
   white-space: nowrap;
+}
+
+/* Fonts */
+.digit {font-family: DM Mono;}
+.krona {font-family: Krona One;}
+.lora {font-family: Lora;}
+.lacquer {font-family: Lacquer;}
+.pixels {font-family: Coral Pixels;}
+.awful {font-family: Awfully Digital;}
+.quantico {font-family: Quantico;}
+
+.caviarde {background: var(--line2);text-transform: uppercase;}
+
+.holo-frame {position: relative;border: 1px solid var(--line2);border-radius: var(--r7);padding: 0 12px;}
+.holo-frame::after {
+  content: '\F2D1  \F623';
+  font-family: 'bootstrap-icons';
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 0.8em;
+  letter-spacing: 4px;
+  color: var(--line2);
+}
+.holo-frame::before {
+  content: '\F24A  HOLOCHAT';
+  font-family: 'bootstrap-icons',var(--ff) ;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 9px;
+  color: var(--a);
+  background: var(--ad);
+  padding: 4px 10px;
+  border-radius: var(--r12);
+  border: 1px solid var(--ab);
 }
 
 /* === SUJETS ONGLETS =============================== */
