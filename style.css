@@ -2268,7 +2268,6 @@ form[action="/memberlist"] {
   flex: 1;
   max-width: 270px;
   transition: background .2s,;
-  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
 }
 .lore-search:focus-within {
   background: var(--a);
