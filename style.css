@@ -3692,12 +3692,12 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   margin-top: 50px;
   border-top-left-radius: var(--r7);
 }
-.catacc-topics-header {
+.catacc-header {
   padding: 11px 15px 9px;
   border-bottom: 1px solid var(--line);
   flex-shrink: 0;
 }
-.catacc-topics-label {
+.catacc-label {
   font-family: var(--fm);
   font-size: 10px;
   letter-spacing: .22em;
