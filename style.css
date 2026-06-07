@@ -3999,7 +3999,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 .game-bubble {
   position: absolute;
   right: 86px;
-  bottom: 20px;
+  bottom: 46px;
   background: var(--card);
   border: 1px solid var(--a);
   border-radius: 8px 8px 2px 8px;
