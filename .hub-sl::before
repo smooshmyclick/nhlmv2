@@ -4366,6 +4366,7 @@ input[type="radio"] { display: none; }
   grid-template-columns: 580px 1fr 180px;
   grid-template-rows: 1fr auto;
   height: 254px;
+  clip-path: polygon(18px 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%, 0 18px);
 }
 /* Nouveau message */
 .cate-c5 .forum.cat_new {
@@ -5803,6 +5804,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   align-items: stretch;
   flex: 1;
   min-height: 0;
+  max-height: 200px;
 }
 
 /* Section générique */
