@@ -4157,11 +4157,10 @@ input[type="radio"] { display: none; }
   display: flex;
   flex-direction: column;
   background: var(--card);
-  border: 1px solid var(--line);
   border-radius: var(--r8);
   overflow: hidden;
+  clip-path: polygon(18px 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%, 0 18px);
 }
-.cate-c3 .forum:hover { border: 1px solid var(--ab);}
 /* Nouveau message */
 .cate-c3 .forum.cat_new {
   border-color: var(--ab);
@@ -4872,7 +4871,7 @@ input[type="radio"] { display: none; }
   background-repeat: no-repeat;
 }
 .cate-c2 .forum {
-  background: var(--card);
+  background: var(--card2);
   border: 1px solid var(--line);
   border-radius: var(--r10);
   padding: 16px;
@@ -4882,7 +4881,6 @@ input[type="radio"] { display: none; }
   position: relative;
   overflow: visible;
 }
-.cate-c2 .forum { border: 1px solid var(--ab); }
 
 .cate-c2 .forum_details { padding: 8px 0; min-height: 110px; }
 
