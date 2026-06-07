@@ -5638,10 +5638,9 @@ blockquote .holo-msg .holo-msg-avatar {
     display: flex;
     justify-content: flex-end;
     margin: 0 80px;
-    background: var(--ag);
+    background: var(--ab);
     padding: 8px;
     border-radius: 8px 8px 0 0;
-    border: 1px solid var(--ab);
     border-bottom: 0;
   }
 .btn-act {
@@ -6257,10 +6256,9 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
     margin: 0 80px;
     color: var(--t2);
     font-family: var(--ff);
-    background: var(--ag);
+    background: var(--ab);
     padding: 15px;
     border-radius: 0 0 8px 8px;
-    border: 1px solid var(--ab);
     border-top: 0;
     transition: padding-top 0.3s ease;
 }
