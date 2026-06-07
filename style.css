@@ -5659,7 +5659,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 
 .hub {
   display: grid;
-  grid-template-columns: 200px 1fr 260px;
+  grid-template-columns: 200px 1fr 280px;
   grid-template-rows: auto 1fr auto;
   gap: 8px;
   font-family: var(--fm);
