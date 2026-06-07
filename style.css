@@ -4582,14 +4582,10 @@ input[type="radio"] { display: none; }
     "cover   right";
   min-height: 180px;
   background: var(--deep);
-  border: 1px solid var(--line);
   border-radius: var(--r12);
   overflow: hidden;
   margin-bottom: 6px;
-  transition: border-color .35s;
 }
-.cate-c1 .forum.row:hover { border-color: var(--ab); }
-
 .cate-c1 .forum.row::after {
   content: '';
   position: absolute;
