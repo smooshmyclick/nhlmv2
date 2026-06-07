@@ -4759,14 +4759,6 @@ input[type="radio"] { display: none; }
   gap: 0px;
 }
 .cate-c1 .forum_content:hover { border-color: var(--ab); background: var(--surface); }
-.cate-c1 .forum_content::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse 80% 55% at 50% 0%, var(--ag), transparent 65%);
-  pointer-events: none;
-  z-index: 0;
-}
 
 .cate-c1 .forum-img      { display: none; }
 
@@ -4837,7 +4829,6 @@ input[type="radio"] { display: none; }
   font-size: 8.5px;
   letter-spacing: .32em;
   text-transform: uppercase;
-  color: var(--a);
   margin-bottom: 8px;
 }
 
