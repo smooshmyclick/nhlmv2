@@ -5893,7 +5893,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 5px;
   background: var(--surface);
   padding: 14px;
   flex: 1;
@@ -6029,32 +6029,14 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 2px 12px;
-  background: var(--card);
   font-family: var(--ft);
   font-size: 12px;
   color: var(--t2);
   text-decoration: none;
   white-space: nowrap;
-  transition: border-color .12s, background .12s, color .12s;
-
-  border-radius: var(--r2);
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    8px 100%,
-    0 calc(100% - 8px)
-  );
 }
-.hub_lastConnected .lc-chips a:hover {
-  background: var(--card2);
-  color: var(--t1);
-}
-.hub_lastConnected .separator { display: none; }
 
 /* COL 3 : stats forum + carrousel factions */
-
 .hub-right {
   grid-column: 3;
   grid-row: 1;
