@@ -3969,7 +3969,6 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   background: var(--surface);
   border-top-right-radius: var(--r7);
   border-top-left-radius: var(--r7);
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%);
 }
 
 .catacc-staff {
