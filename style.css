@@ -3964,6 +3964,8 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 
 .catacc-panel-header {
   grid-area: header;
+  overflow: visible;
+  position: relative;
   background: var(--surface);
   border-top-right-radius: var(--r7);
   border-top-left-radius: var(--r7);
