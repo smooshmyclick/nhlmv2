@@ -4367,7 +4367,6 @@ input[type="radio"] { display: none; }
   grid-template-rows: 1fr auto;
   height: 254px;
 }
-.cate-c5 .forum:hover { border: 1px solid var(--ab) }
 /* Nouveau message */
 .cate-c5 .forum.cat_new {
   border-color: var(--ab);
