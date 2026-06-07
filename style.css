@@ -6078,29 +6078,21 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 }
 .hub-fst .fs {
   flex: 1;
-  background: var(--deep);
-  padding: 10px 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+  padding: 4px 8px;
   transition: background .15s;
   cursor: default;
 }
 .hub-fst .fs strong {
-  display: block;
   font-family: var(--ff), sans-serif;
-  font-size: 16px;
-  color: var(--t1);
-  line-height: 1;
-  transition: color .15s;
+  font-size: 8px;
+  color: var(--t2);
 }
 .hub-fst .fs span {
-  display: block;
   font-size: 8px;
   text-transform: uppercase;
   letter-spacing: .14em;
   color: var(--t2);
-  margin-top: 2px;
+  margin-left: 4px;
 }
 
 /* Carrousel factions */
