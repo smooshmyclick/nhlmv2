@@ -3972,6 +3972,66 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   border-top-left-radius: var(--r7);
 }
 
+/* --- Predef Factions ---*/
+
+/* --- Game : Nihilum Battle Royal Simulator -------*/ 
+.game-wrapper {
+  position: absolute;
+  right: -14px;
+  bottom: -12px;
+  width: 74px;
+  height: 100px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.game-img {
+  width: 100%;
+  height: 100%;
+  background-image: var(--new-game);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));
+}
+
+.game-bubble {
+  position: absolute;
+  right: 86px;
+  bottom: 20px;
+  background: var(--card);
+  border: 1px solid var(--a);
+  border-radius: 8px 8px 2px 8px;
+  padding: 8px 12px;
+  white-space: nowrap;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--a);
+  letter-spacing: 0.05em;
+}
+
+.game-bubble::after {
+  content: '';
+  position: absolute;
+  right: -7px;
+  bottom: 8px;
+  border-top: 6px solid transparent;
+  border-left: 7px solid var(--a);
+}
+.game-bubble::before {
+  content: '';
+  position: absolute;
+  right: -5px;
+  bottom: 9px;
+  z-index: 1;
+  border-top: 5px solid transparent;
+  border-left: 6px solid var(--card);
+}
+.game-link { display: contents; font-weight: 400; }
+.game-link:hover .game-bubble { font-weight: 700; }
+
+/* --- Staff --- */
 .catacc-staff {
   grid-area: left;
   position: relative;
@@ -3984,7 +4044,6 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   grid-area: right;
 }
 
-/* --- Staff --- */
 /* Cache tous les contenus par défaut */
 .acc-staff { display: none; }
 
