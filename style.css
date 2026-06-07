@@ -6012,8 +6012,8 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   font-family: var(--fm);
 }
 
-/* Chips scrollables */
-.hub_lastConnected .lc-chips {
+/* membres */
+.hub_lastConnected .name-member {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -6025,7 +6025,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   scrollbar-width: thin;
   scrollbar-color: var(--ad) transparent;
 }
-.hub_lastConnected .lc-chips a {
+.hub_lastConnected .name-member a {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -6035,6 +6035,8 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   text-decoration: none;
   white-space: nowrap;
 }
+.hub_lastConnected .name-member .separator { color: var(--t2); }
+.hub_lastConnected .name-member .separator:last-of-type { display: none; }
 
 /* COL 3 : stats forum + carrousel factions */
 .hub-right {
