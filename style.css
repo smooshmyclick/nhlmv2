@@ -6110,7 +6110,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 
 .hub-carousel {
   position: relative;
-  height: 140px;
+  height: 180px;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -6253,6 +6253,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
     border-radius: 0 0 8px 8px;
     border-top: 0;
     transition: padding-top 0.3s ease;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%);
 }
 .ft-rs:hover { padding-top: 18px; }
 .l-rs a {color: var(--t2);background:none}
