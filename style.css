@@ -3960,6 +3960,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
     "header header"
     "left right";
   grid-template-columns: 1.9fr 1fr;
+  grid-template-rows: auto 200px;
 }
 
 .catacc-panel-header {
