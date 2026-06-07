@@ -5943,7 +5943,6 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   transition: color .15s;
 }
 .onlineUsers-list .user:hover a { color: var(--t1); }
-.onlineUsers-list .separator { display: none; }
 
 /* Invités */
 .onlineUsers-list .guest {
