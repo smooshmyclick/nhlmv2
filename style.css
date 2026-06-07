@@ -3097,7 +3097,6 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
  
 /* --- WRAP --- */
 .catgns-wrap {
-  border: 1px solid var(--line);
   border-radius: var(--r12);
   overflow: hidden;
   background: var(--card);
