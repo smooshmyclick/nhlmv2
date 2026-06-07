@@ -4927,9 +4927,7 @@ input[type="radio"] { display: none; }
 
 .cate-c2 .forum_content {
   position: relative;
-  background: var(--deep);
   border-radius: var(--r8) var(--r8) 0 0;
-  border: 1px solid var(--ad);
   margin: -16px -16px 0 -16px;
   padding: 14px 16px 12px;
   text-align: center;
@@ -4939,10 +4937,9 @@ input[type="radio"] { display: none; }
   gap: 6px;
   padding-top: 40px;
   background-color: var(--deep);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='52'%3E%3Cpath d='M30 2 L58 18 L58 34 L30 50 L2 34 L2 18 Z' fill='none' stroke='rgba(255,255,255,.03)' stroke-width='1'/%3E%3C/svg%3E");
   background-size: 60px 52px;
 }
-.cate-c2 .forum_content:hover { border: 1px solid var(--ab); background-color: var(--ag); }
+.cate-c2 .forum_content:hover { background-color: var(--ag); }
 
 /* Nouveau messages */
 .cate-c2 .forum.row.cat_new .forum_content {
