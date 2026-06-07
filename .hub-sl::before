@@ -5834,7 +5834,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 .hub-sl::before {
   content: '//';
   font-size: 9px;
-  color: var(--t3);
+  color: var(--t2);
   letter-spacing: 0;
   font-family: var(--fm), monospace;
 }
@@ -5880,7 +5880,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   min-height: 0;
 }
 .hub-s:has(.onlineUsers-list) .hub-sh {
-  padding: 9px 12px;
+  padding: 4px 10px;
   margin-bottom: 0;
   background: var(--card2);
   border-bottom: 1px solid var(--line2);
@@ -5992,7 +5992,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 }
 .hub_lastConnected .lastConnected-text {
   display: block;
-  padding: 9px 12px;
+  padding: 4px 10px;
   background: var(--card2);
   border-bottom: 1px solid var(--line2);
   font-family: var(--fm);
@@ -6006,7 +6006,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 .hub_lastConnected .lastConnected-text::before {
   content: '//';
   font-size: 9px;
-  color: var(--t3);
+  color: var(--t2);
   letter-spacing: 0;
   margin-right: 6px;
   font-family: var(--fm);
