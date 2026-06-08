@@ -431,7 +431,7 @@ button[onglet]::before {
   z-index: -1;
 }
 button[onglet]:hover::before { background: var(--ad); }
-button[onglet]:hover { color: var(--t0); }
+button[onglet]:hover { color: var(--t0); background: transparent; }
 
 /* Bouton d'onglet cliqué */
 button[onglet].active { color: var(--t0); }
