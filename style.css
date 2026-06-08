@@ -406,34 +406,40 @@ a.sceditor-button {
 
 /* Bouton d'onglet */
 button[onglet] {
-  background-color: transparent;
-  border-radius: var(--r4);
-  padding: 3px 10px;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
   max-width: 300px;
   min-width: 300px;
   font-size: 13px;
-  border: 1px solid transparent;
+  position: relative;
+  color: var(--t0);
+  padding: 12px 28px;
+  z-index: 0;
+  background: transparent;
+  transform: rotate(-4deg);
+  transform-origin: center;
+  font-family: var(--ff);
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
 }
 button[onglet]::before {
   content: "";
   position: absolute;
   inset: -8px;
-  background: var(--a);
-  -webkit-mask: url("https://i.imgur.com/DJdh7ol.png") center / 100% 100% no-repeat;
-  mask: url("https://i.imgur.com/DJdh7ol.png") center / 100% 100% no-repeat;
+  background: var(--t3);
+  -webkit-mask: url("https://i.imgur.com/DJdh7ol.png") center / 70% 50% no-repeat;
+  mask: url("https://i.imgur.com/DJdh7ol.png") center / 70% 50% no-repeat;
   z-index: -1;
 }
-button[onglet]:hover {
-  background-color: var(--card2) !important;
-  border: 1px solid transparent !important;
+button[onglet]:hover::before {
+  background: var(--ad);
 }
 
 /* Bouton d'onglet cliqué */
 button[onglet].active {
-    background-color: var(--ad);
     color: var(--t1);
-    border: 1px solid var(--ad);
+}
+button[onglet].active::before {
+  background: var(--a);
 }
 
 /* Modification du message qui contient les onglets */
