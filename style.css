@@ -410,8 +410,8 @@ button[onglet] {
   border-radius: var(--r4);
   padding: 3px 10px;
   margin-bottom: 6px;
-  max-width: 155px;
-  min-width: 155px;
+  max-width: 300px;
+  min-width: 300px;
   font-size: 13px;
   border: 1px solid transparent;
 }
