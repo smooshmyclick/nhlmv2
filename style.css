@@ -395,10 +395,13 @@ a.sceditor-button {
     grid-row: 1;
     grid-column: 1;
     /* Positionne le post dans la première colonne */
-    width: 220px;
+    width: 300px;
     /* Largeur du sujet */
     background: transparent;
     border: none;
+}
+.page-tab .post-rp:has(.menu-tab button[onglet]) {
+    padding: 0;
 }
 
 /* Bouton d'onglet */
