@@ -406,12 +406,12 @@ a.sceditor-button {
 
 /* Bouton d'onglet */
 button[onglet] {
-  margin-bottom: 0px;
+  margin-bottom: -5px;
   max-width: 300px;
   min-width: 300px;
   font-size: 13px;
   position: relative;
-  color: var(--t0);
+  color: var(--t1);
   padding: 12px 28px;
   z-index: 0;
   background: transparent;
@@ -425,22 +425,17 @@ button[onglet]::before {
   content: "";
   position: absolute;
   inset: -8px;
-  background: var(--t3);
+  background: var(--ag);
   -webkit-mask: url("https://i.imgur.com/DJdh7ol.png") center / 70% 50% no-repeat;
   mask: url("https://i.imgur.com/DJdh7ol.png") center / 70% 50% no-repeat;
   z-index: -1;
 }
-button[onglet]:hover::before {
-  background: var(--ad);
-}
+button[onglet]:hover::before { background: var(--ad); }
+button[onglet]:hover { color: var(--t0); }
 
 /* Bouton d'onglet cliqué */
-button[onglet].active {
-    color: var(--t1);
-}
-button[onglet].active::before {
-  background: var(--a);
-}
+button[onglet].active { color: var(--t0); }
+button[onglet].active::before { background: var(--a); }
 
 /* Modification du message qui contient les onglets */
 .page-tab .post:has(div[onglet]) {
