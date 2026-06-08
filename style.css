@@ -6255,6 +6255,6 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%);
 }
 .ft-rs:hover { padding-top: 18px; }
-.l-rs a {color: var(--t2);background:none}
+.l-rs a {color: var(--t2);background:none;font-family: var(--fn);letter-spacing: 0.18em;}
 .r-rs {margin-left: auto;font-size: 10px;}
-.r-rs a {color: var(--t2);background:none}
+.r-rs a {color: var(--t2);background:none;}
