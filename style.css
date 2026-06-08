@@ -379,6 +379,7 @@ a.sceditor-button {
     margin-top: 10px;
 
     /* Supprime tous les éléments superflus comme les profils, la date, certains boutons d'édition...*/
+    .post-foot,
     .post_profile,
     .post_date,
     .like_button,
@@ -390,12 +391,14 @@ a.sceditor-button {
 }
 
 /* Modification du message qui contient les boutons */
-.page-tab .post:has(button[onglet]) {
+.page-tab .post_message:has(button[onglet]) {
     grid-row: 1;
     grid-column: 1;
     /* Positionne le post dans la première colonne */
     width: 220px;
     /* Largeur du sujet */
+    background: transparent;
+    border: none;
 }
 
 /* Bouton d'onglet */
