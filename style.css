@@ -415,6 +415,15 @@ button[onglet] {
   font-size: 13px;
   border: 1px solid transparent;
 }
+button[onglet]::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  background: var(--a);
+  -webkit-mask: url("https://i.imgur.com/DJdh7ol.png") center / 100% 100% no-repeat;
+  mask: url("https://i.imgur.com/DJdh7ol.png") center / 100% 100% no-repeat;
+  z-index: -1;
+}
 button[onglet]:hover {
   background-color: var(--card2) !important;
   border: 1px solid transparent !important;
