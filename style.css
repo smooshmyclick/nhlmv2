@@ -440,7 +440,7 @@ button[onglet].active { color: var(--t0); }
 button[onglet].active::before { background: var(--a); }
 
 /* Modification du message qui contient les onglets */
-.page-tab .post_message:has(div[onglet]) {
+.page-tab .post-rp:has(div[onglet]) {
     grid-row: 1;
     grid-column: 2;
     /* Positionne le post dans la deuxième colonne */
@@ -449,7 +449,7 @@ button[onglet].active::before { background: var(--a); }
 }
 
 /* Message en onglet qui est ouvert */
-.page-tab .post_message:has(div[onglet]).active {
+.page-tab .post-rp:has(div[onglet]).active {
     display: block;
 }
 
