@@ -4071,7 +4071,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 #vobservateur:checked ~ .staff-card #cobservateur { display: block; }
 
 /* Cache les radios natifs */
-input[type="radio"] { display: none; }
+.catacc-staff input[type="radio"] { display: none; }
 
 .img-staff {
   position: absolute;
