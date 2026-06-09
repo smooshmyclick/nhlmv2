@@ -415,6 +415,8 @@ button[onglet] {
   padding: 12px 28px;
   z-index: 0;
   background: transparent;
+  isolation: isolate;
+  cursor: pointer;
   transform: rotate(-4deg);
   transform-origin: center;
   font-family: var(--ff);
@@ -429,6 +431,7 @@ button[onglet]::before {
   -webkit-mask: url("https://i.imgur.com/DJdh7ol.png") center / 70% 50% no-repeat;
   mask: url("https://i.imgur.com/DJdh7ol.png") center / 70% 50% no-repeat;
   z-index: -1;
+  pointer-events: none;
 }
 button[onglet]:hover::before { background: var(--ad); }
 button[onglet]:hover { color: var(--t0); background: transparent !important; }
