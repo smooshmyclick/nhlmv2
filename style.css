@@ -419,7 +419,6 @@ button[onglet] {
   cursor: pointer;
   transform: rotate(-4deg);
   transform-origin: center;
-  font-family: var(--ff);
   text-transform: lowercase;
   letter-spacing: 0.05em;
 }
@@ -441,7 +440,7 @@ button[onglet].active { color: var(--t0); }
 button[onglet].active::before { background: var(--a); }
 
 /* Modification du message qui contient les onglets */
-.page-tab .post:has(div[onglet]) {
+.page-tab .post_row:has(div[onglet]) {
     grid-row: 1;
     grid-column: 2;
     /* Positionne le post dans la deuxième colonne */
@@ -450,7 +449,7 @@ button[onglet].active::before { background: var(--a); }
 }
 
 /* Message en onglet qui est ouvert */
-.page-tab .post:has(div[onglet]).active {
+.page-tab .post_row:has(div[onglet]).active {
     display: block;
 }
 
