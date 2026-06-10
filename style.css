@@ -6085,7 +6085,6 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 /* Carrousel factions */
 .hub_groups {
   grid-column: 3;
-  grid-row: 2 / span 2;
   display: flex;
   flex-direction: column;
   background: transparent;
@@ -6097,7 +6096,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 
 .hub-carousel {
   position: relative;
-  height: 180px;
+  height: 240px;
   overflow: hidden;
   flex-shrink: 0;
 }
