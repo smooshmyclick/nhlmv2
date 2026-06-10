@@ -6064,24 +6064,18 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 .hub-fst {
   display: flex;
   gap: 1px;
-  background: var(--line);
   border-radius: var(--r6);
-  overflow: hidden;
-  margin-top: 4px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-.hub-fst .fs {
-  flex: 1;
-  padding: 4px 8px;
-  transition: background .15s;
-  cursor: default;
-}
+.hub-fst .fs { }
 .hub-fst .fs strong {
-  font-family: var(--ff), sans-serif;
-  font-size: 8px;
+  font-size: 10px;
   color: var(--t2);
 }
 .hub-fst .fs span {
-  font-size: 8px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: .14em;
   color: var(--t2);
