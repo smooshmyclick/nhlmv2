@@ -3137,12 +3137,6 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   background-image: url('https://i.pinimg.com/1200x/3f/1c/d6/3f1cd62f6357360cb1bcfc1441edba09.jpg');
   background-size: cover;
   background-position: center 30%;
-  filter: brightness(.45) saturate(.6);
-  transition: transform .6s cubic-bezier(.4,0,.2,1), filter .4s;
-}
-.catgns-wrap:hover .catgns-img-bg {
-  transform: scale(1.03);
-  filter: brightness(.52) saturate(.65);
 }
 .catgns-img-overlay {
   position: absolute;
