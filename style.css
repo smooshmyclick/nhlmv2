@@ -3174,19 +3174,12 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   transition: color .35s;
 }
 .catgns-title {
-  font-family: var(--fn);
+  font-family: var(--ff);
   font-weight: 800;
   font-size: 50px;
   line-height: 1;
   color: var(--t1);
-  letter-spacing: .05em;
   margin: 0;
-}
-.catgns-title em {
-  font-style: italic;
-  color: var(--a);
-  text-transform: none;
-  transition: color .35s;
 }
 .catgns-tagline {
   font-size: 13px;
@@ -3656,14 +3649,13 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 /* --- EN-TÊTE DE SECTION --- */
 .catacc-sec-head { }
 .catacc-sec-title {
-  font-family: var(--fn);
-  font-size: 35px;
-  letter-spacing: 0.1em;
+  font-family: var(--ff);
+  font-size: 28px;
   color: var(--a);
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-left: 20px;
+  margin-left: 29px;
   margin-bottom: -50px;
 }
 .catacc-sec-link {
