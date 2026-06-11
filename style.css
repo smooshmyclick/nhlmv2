@@ -770,7 +770,7 @@ button[onglet].active::before { background: var(--a); }
   object-position: center;
   display: block;
 }
-.myface.u-img-square { width: 100%) };
+.myface.u-img-square { width: 100%) }
 /* Bloc nom + rang */
 .myprofile-infos {
   display: flex;
@@ -5901,7 +5901,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
   background: var(--surface);
   padding: 14px;
   flex: 1;
@@ -6031,6 +6031,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--ad) transparent;
+  max-height: 150px;
 }
 .hub_lastConnected .name-member a {
   display: inline-flex;
