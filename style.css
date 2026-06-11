@@ -1576,6 +1576,7 @@ left: 50%;
   display: flex;
   align-items: center;
   gap: 7px;
+  justify-content: center;
 }
 .sb-topsite-btns {
   display: flex;
