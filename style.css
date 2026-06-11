@@ -4746,6 +4746,11 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 .cate-c1 .forum-stats-overlay span + i { margin-left: 8px; }
 
+.cate-c1 .forum-stats-overlay span:not(:last-child)::after { 
+  content: '|';
+  color: var(--t3);
+}
+
 /* Panneau droit */
 .cate-c1 .forum_content {
   grid-area: right;
@@ -5009,7 +5014,10 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   font-size: 11px;
   color: var(--t2);
 }
-
+.cate-c2 .forum-stats-overlay span:not(:last-child)::after { 
+  content: '|';
+  color: var(--t3);
+}
 /* Sous forums */
 .cate-c2 .forum_sub a {
   display: flex;
