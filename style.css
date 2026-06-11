@@ -2754,6 +2754,8 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   cursor: pointer;
   transition: background .15s, border-color .15s;
   padding: 0;
+  clip-path: none;
+}
 }
 .monitor-item-status svg {
   width: 11px;
@@ -2935,8 +2937,8 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 
 /* Handle drag & drop */
 .monitor-item-handle {
-  width: 10px;
-  height: 20px;
+  width: 18px;
+  height: 26px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -2948,12 +2950,13 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   background: none;
   border: none;
   padding: 0;
+  clip-path: none;
 }
 .monitor-item:hover .monitor-item-handle { opacity: 1; }
 .monitor-item-handle:active { cursor: grabbing; color: var(--a); }
 .monitor-item-handle svg {
-  width: 10px;
-  height: 14px;
+  width: 16px;
+  height: 20px;
   pointer-events: none;
 }
 
