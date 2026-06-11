@@ -4732,13 +4732,15 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
 }
 .cate-c1 .forum-stats-overlay i {
   color: var(--a);
   font-size: 11px;
 }
 .cate-c1 .forum-stats-overlay span {
+  gap: 5px;
+  display: flex;
   font-family: var(--fm);
   font-size: 10px;
   letter-spacing: .08em;
@@ -4999,7 +5001,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 .cate-c2 .forum-stats-overlay {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 5px;
   justify-content: center;
   padding: 4px 0;
 }
@@ -5010,6 +5012,8 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 }
 
 .cate-c2 .forum-stats-overlay span {
+  gap: 5px;
+  display: flex;
   font-family: var(--fm);
   font-size: 11px;
   color: var(--t2);
