@@ -5812,7 +5812,6 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 /* Section générique */
 .hub-s {
   background: var(--card);
-  border: 1px solid var(--line2);
   border-radius: var(--r6);
   padding: 10px 12px;
 }
@@ -5886,7 +5885,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 .hub-s:has(.onlineUsers-list) .hub-sh {
   padding: 4px 10px;
   margin-bottom: 0;
-  background: var(--card2);
+  background: var(--ad);
   border-bottom: 1px solid var(--line2);
   gap: 10px;
   flex-shrink: 0;
@@ -5987,7 +5986,6 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   flex: 2;
   min-width: 0;
   min-height: 0;
-  border: 1px solid var(--line2);
   border-radius: var(--r6);
   overflow: hidden;
   display: flex;
@@ -5997,7 +5995,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 .hub_lastConnected .lastConnected-text {
   display: block;
   padding: 4px 10px;
-  background: var(--card2);
+  background: var(--ad);
   border-bottom: 1px solid var(--line2);
   font-family: var(--fm);
   font-size: 9px;
