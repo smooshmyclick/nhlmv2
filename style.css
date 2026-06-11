@@ -107,7 +107,7 @@
 .modrech-bar { width: 2px; flex-shrink: 0; background: var(--ab); margin: 14px 0; }
 .modrech-body { flex: 1; padding: 14px 20px; }
 .modrech-item-header { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; flex-wrap: wrap; }
-.modrech-item-title { font-family: var(--ff); font-size: 11.5px; color: var(--t1); letter-spacing: .04em; }
+.modrech-item-title { font-family: var(--ff); font-size: 12px; color: var(--t1); letter-spacing: .04em; }
 .modrech-status { font-family: var(--fm); font-size: 8px; letter-spacing: .14em; text-transform: uppercase; padding: 2px 10px; background: rgba(255,255,255,.03); color: var(--t2); border-radius: var(--r2); clip-path: polygon(0 0, 100% 0, 100% 100%, 8px 100%, 0 calc(100% - 8px));}
 .modrech-item-desc { color: var(--t2); }
 
@@ -835,7 +835,7 @@ button[onglet].active::before { background: var(--a); }
 #switcheroo::before {
   content: 'Multicomptes';
   display: block;
-  font-size: 10.5px;
+  font-size: 11px;
   letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--t3);
@@ -1029,7 +1029,7 @@ button[onglet].active::before { background: var(--a); }
 /* Titre "Notifications" */
 .notiffi_manage::before {
   content: 'Notifications';
-  font-size: 10.5px;
+  font-size: 11px;
   letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--t2);
@@ -1552,7 +1552,7 @@ left: 50%;
 }
 .theme-cur {
   font-family: var(--fm);
-  font-size: 10.5px;
+  font-size: 11px;
   letter-spacing: .12em;
   color: var(--a);
   text-transform: uppercase;
@@ -1826,7 +1826,7 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
 }
 .nav-sub-link-deep {
   padding-left: 52px;
-  font-size: 11.5px;
+  font-size: 12px;
 }
 
 .nav-faction-dot {
@@ -2308,7 +2308,7 @@ form[action="/memberlist"] {
   outline: none !important;
   box-shadow: none !important;
   font-family: var(--fm);
-  font-size: 10.5px;
+  font-size: 11px;
   color: var(--t1);
   width: 100%;
   padding: 0;
@@ -2920,7 +2920,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   gap: 8px;
   align-items: flex-start;
   font-family: var(--fm);
-  font-size: 10.5px;
+  font-size: 11px;
   color: var(--t2);
   line-height: 1.5;
 }
@@ -3882,7 +3882,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   text-shadow: 0 2px 12px rgba(0,0,0,.8);
 }
 .catacc-ev-desc {
-  font-size: 11.5px;
+  font-size: 12px;
   color: rgba(255,255,255,.6);
   line-height: 1.55;
   margin-bottom: 12px;
@@ -3951,7 +3951,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   font-family: var(--ff);
 }
 .catacc-news-excerpt {
-  font-size: 11.5px;
+  font-size: 12px;
   color: var(--t2);
   line-height: 1.5;
   margin-top: 3px;
@@ -4301,7 +4301,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
 /* TEXTE DE DESCRIPTION */
 .cate-c3 .forum-desc-text {
   padding: 4px 14px 10px;
-  font-size: 11.5px;
+  font-size: 12px;
   color: var(--t2);
   line-height: 1.6;
   max-height: 80px;
@@ -4337,7 +4337,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 10.5px;
+  font-size: 11px;
   padding: 3px 0;
   color: var(--t2);
   font-weight: 400;
@@ -4474,7 +4474,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   display: flex;
   align-items: flex-start;
   padding: 10px 14px 10px 20px;
-  font-size: 11.5px;
+  font-size: 12px;
   color: var(--t2);
   line-height: 1.65;
   overflow-y: auto;
@@ -4502,7 +4502,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 10.5px;
+  font-size: 11px;
   padding: 3px 0;
   color: var(--t2);
   transition: color 0.2s;
@@ -5015,7 +5015,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 10.5px;
+  font-size: 11px;
   padding: 3px 0;
   color: var(--t2);
   font-weight: 400;
@@ -5523,7 +5523,7 @@ blockquote .holo-msg .holo-msg-avatar {
   border-radius: var(--r4);
   padding: 5px 8px;
   font-family: var(--fm);
-  font-size: 11.5px;
+  font-size: 12px;
   color: var(--t1);
   outline: none;
   transition: border-color .15s;
