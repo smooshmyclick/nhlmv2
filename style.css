@@ -2510,7 +2510,6 @@ form[action="/memberlist"] {
   align-items: center;
   gap: 10px;
   padding: 10px 14px;
-  border: 1px solid transparent;
   background: linear-gradient(135deg, var(--ad) 0%, var(--deep) 100%);
   cursor: pointer;
   text-align: left;
@@ -2763,9 +2762,13 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   color: transparent;
   transition: color .15s;
   stroke-width: 2.5;
+  display: none;
 }
 .monitor-item-status:hover {
   border-color: var(--a);
+}
+.monitor-item-status.checked svg {
+    display: block;
 }
 .monitor-item.is-done .monitor-item-status {
   background: var(--a);
