@@ -5940,7 +5940,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 
 .onlineUsers-list .user a {
   font-family: var(--ft);
-  font-size: 12px;
+  font-size: 13px;
   margin-left: 2px;
   color: var(--t2);
   text-decoration: none;
@@ -6038,7 +6038,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   align-items: center;
   gap: 4px;
   font-family: var(--ft);
-  font-size: 12px;
+  font-size: 13px;
   color: var(--t2);
   text-decoration: none;
   white-space: nowrap;
