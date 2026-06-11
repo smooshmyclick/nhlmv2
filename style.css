@@ -3840,9 +3840,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   background-size: cover;
   background-position: center 40%;
   filter: brightness(.8);
-  transition: transform .7s cubic-bezier(.4,0,.2,1);
 }
-.catacc-ev-col:hover .catacc-ev-img { transform: scale(1.04); }
 .catacc-ev-overlay {
   position: absolute;
   inset: 0;
