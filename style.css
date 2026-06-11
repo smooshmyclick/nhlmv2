@@ -2527,7 +2527,6 @@ form[action="/memberlist"] {
 }
 #monitor-toggle:hover {
   background: linear-gradient(135deg, var(--ab) 0%, var(--deep) 100%);
-  border-color: var(--a);
 }
 
 .monitor-toggle-icon {
