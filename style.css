@@ -2755,20 +2755,15 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   padding: 0;
   clip-path: none;
 }
-}
 .monitor-item-status svg {
   width: 11px;
   height: 11px;
   color: transparent;
   transition: color .15s;
   stroke-width: 2.5;
-  display: none;
 }
 .monitor-item-status:hover {
   border-color: var(--a);
-}
-.monitor-item-status.checked svg {
-    display: block;
 }
 .monitor-item.is-done .monitor-item-status {
   background: var(--a);
