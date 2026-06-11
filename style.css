@@ -3137,6 +3137,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   background-image: url('https://i.pinimg.com/1200x/3f/1c/d6/3f1cd62f6357360cb1bcfc1441edba09.jpg');
   background-size: cover;
   background-position: center 30%;
+  filter: brightness(.45) saturate(.6);
 }
 .catgns-img-overlay {
   position: absolute;
