@@ -2798,8 +2798,10 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   padding: 1px 5px;
   border-radius: 999px;
   font-family: var(--fm);
-  font-size: 10px;
+  font-size: 8px;
   margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .monitor-item-chip.todo { background: var(--red3); color: var(--red1); border: 1px solid var(--red2); }
 .monitor-item-chip.done { background: var(--green3); color: var(--green1); border: 1px solid var(--green2); }
