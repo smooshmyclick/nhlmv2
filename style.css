@@ -3345,21 +3345,7 @@ body.sidebar-collapsed #monitor-panel { left: 8px; }
   .catgns-card:nth-child(even) { border-right: none; }
 }
 
-
-/* === CHAMPS DE PROFIL === */
-.profile_field label {
-  font-size: 0; /* cache le nœud texte " : " */
-}
-
-.profile_field label span {
-  font-size: 14px; /* remet la taille normale sur le span */
-}
-
-[data-champ="Genre"] label { color: var(--a); } 
-[data-champ="Genre"] field { color: var(--t1); }
-
 /* === Codes Libre Service === */
-
 /* --- Codes balises spoilers --- */
 /* Caviardé (spoiler inline) */
 .caviarde {
