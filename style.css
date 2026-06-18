@@ -5712,7 +5712,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   object-position: center top;
   filter: brightness(.75) contrast(1.08);
   transition: filter .4s, box-shadow .3s;
-  border: 1px solid rgba(255,255,255,.22);
+  border: 1px solid var(--line2);
   box-shadow: 0 4px 10px rgba(0,0,0,.6);
 }
 .hub_infos:hover .hub_lastUser .lastUser-avatar {
@@ -5721,7 +5721,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   border-color: rgba(255,255,255,.32);
 }
 
-/* Réticules 4 coins */
+/* Réticules */
 .hub_lastUser::before,
 .hub_lastUser::after {
   content: '';
