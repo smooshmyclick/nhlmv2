@@ -96,7 +96,7 @@
 
 .modrech-item { display: flex; border-bottom: 1px solid var(--line); }
 .modrech-item:last-child { border-bottom: none; }
-.modrech-bar { width: 2px; flex-shrink: 0; background: var(--ab); margin: 14px 0 14px 20px; }
+.modrech-bar { width: 6px; flex-shrink: 0; background: var(--ab); margin: 14px 0 14px 20px; border-radius: var(--r4); }
 .modrech-body { flex: 1; padding: 14px 20px; }
 .modrech-item-header { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; flex-wrap: wrap; }
 .modrech-item-title { font-family: var(--ff); font-size: 12px; color: var(--t1); letter-spacing: .04em; }
