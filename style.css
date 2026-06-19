@@ -6663,33 +6663,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   -webkit-mask-image: url("https://api.iconify.design/pixelarticons/card-text.svg");
 }
 
-/* --- Guide du Nouveau Joueur --- */
-.guide-new {
-  position: static;
-  display: flex;
-  gap: 12px;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.guide-new .game-bubble {
-  position: relative;
-  right: auto;
-  bottom: auto;
-  white-space: normal;
-  max-width: 330px;
-}
-.guide-new .game-img {
-  width: 74px;
-  height: 100px;
-  flex-shrink: 0;
-}
-.guide-new .game-bubble::after { bottom: 44px; }
-.guide-new .game-bubble::before { bottom: 45px; }
-
-/*------------------------------------------*/
-/* ----- PROFIL ----------------------------*/
- 
-/* Profil Joueur */
+/* -------- Profil Joueur -------*/
 .profil_img_btn {
   position: relative;
   display: inline-block;
