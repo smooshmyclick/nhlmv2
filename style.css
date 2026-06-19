@@ -6549,6 +6549,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   padding: 8px;
   border-radius: var(--r8);
   box-shadow: 0 4px 14px rgba(0, 0, 0, .10);
+  margin-top: 15px;
 }
 
 .fiche_btn {
