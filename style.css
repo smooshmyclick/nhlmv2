@@ -1630,7 +1630,7 @@
 .cate-c1 .forumtitle:hover { color: var(--t0); background: none; }
 
 .cate-c1 .forumtitle::before {
-  content: 'ACCÈS PUBLIC';
+  content: 'PUBLIC';
   display: inline-flex;
   align-items: center;
   padding: 3px 12px;
