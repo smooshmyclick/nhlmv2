@@ -3,9 +3,12 @@
 /* - 2. CODES MISE EN FORME -------------------------------- */
 /* - 3. EDITEUR DE POSTS ----------------------------------- */
 /* - 4. BALISES BBCODE SPECIALES --------------------------- */
+/* - 5. SUJETS A ONGLETS ----------------------------------- */
 /* ========================================================= */
 
+/* ========================================================= */
 /* - 1. CODES LIBRES SERVICES ------------------------------ */
+
 /* --- LS : COMMUN --- */
 .rp-text{font-size:13.5px;line-height:1.5;padding:28px 30px;}
 .rp-footer{display:flex;padding:9px 18px;border-top:1px solid var(--line);background:rgba(0,0,0,.18);}
@@ -190,11 +193,13 @@
 .hljs-addition{background:var(--green2)}
 .hljs-chunk{color:var(--t2)}
 
+/* ========================================================= */
 /* - 2. CODES MISE EN FORME -------------------------------- */
 
 
-
+/* ========================================================= */
 /* - 3. EDITEUR DE POSTS ----------------------------------- */
+
 /* --- Editeur global --- */
 .sceditor-container {
   border: var(--border) !important;
@@ -322,7 +327,9 @@ a.sceditor-button {
 .nihilum-tag-btn { margin: 0 3px; padding: 5px; cursor: pointer !important; }
 .nihilum-tag-btn:hover { border: none !important; }
 
+/* ========================================================= */
 /* - 4. BALISES BBCODE SPECIALES --------------------------- */
+
 /* --- BBCode spéciaux --- */ 
 .codeline {
   font-family: var(--fm);
@@ -369,3 +376,98 @@ a.sceditor-button {
 .pixels {font-family: Coral Pixels;}
 .awful {font-family: Awfully Digital;}
 .quantico {font-family: Quantico;}
+
+/* ========================================================= */
+/* - 5. SUJETS A ONGLETS ----------------------------------- */
+
+.menu-tab {
+  max-width: 156px;
+  min-width: 156px;
+}
+/* Cette class est ajouté par le script que si le sujet contient un élément <buton onglet=""> */
+.page-tab {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    /* transforme la structure du post en deux colonnes, la première pour les boutons, la deuxième pour les onglets */
+    gap: 10px;
+    margin-top: 10px;
+
+    /* Supprime tous les éléments superflus comme les profils, la date, certains boutons d'édition...*/
+    .post-foot,
+    .post_profile,
+    .post_date,
+    .like_button,
+    .btn-quote,
+    li:has(.fa-mention),
+    .btn-ip {
+        display: none;
+    }
+}
+
+/* Modification du message qui contient les boutons */
+.page-tab .post_message:has(button[onglet]) {
+    grid-row: 1;
+    grid-column: 1;
+    /* Positionne le post dans la première colonne */
+    width: 300px;
+    /* Largeur du sujet */
+    background: transparent;
+    border: none;
+}
+.page-tab .post-rp:has(.menu-tab button[onglet]) {
+    padding: 0;
+}
+
+/* Bouton d'onglet */
+button[onglet] {
+  margin-bottom: -5px;
+  max-width: 300px;
+  min-width: 230px;
+  font-size: 13px;
+  position: relative;
+  color: var(--t1);
+  padding: 12px 28px;
+  z-index: 0;
+  background: transparent;
+  isolation: isolate;
+  cursor: pointer;
+  transform: rotate(-4deg);
+  transform-origin: center;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+}
+button[onglet]::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  background: var(--ag);
+  -webkit-mask: url("https://i.imgur.com/DJdh7ol.png") center / 70% 50% no-repeat;
+  mask: url("https://i.imgur.com/DJdh7ol.png") center / 70% 50% no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
+button[onglet]:hover::before { background: var(--ad); }
+button[onglet]:hover { color: var(--t0); background: transparent !important; }
+
+/* Bouton d'onglet cliqué */
+button[onglet].active { color: var(--t0); }
+button[onglet].active::before { background: var(--a); }
+
+/* Modification du message qui contient les onglets */
+.page-tab .post_row:has(div[onglet]) {
+    grid-row: 1;
+    grid-column: 2;
+    /* Positionne le post dans la deuxième colonne */
+    display: none;
+    /* Masque l'onglet par défaut */
+}
+
+/* Message en onglet qui est ouvert */
+.page-tab .post_row:has(div[onglet]).active {
+    display: block;
+}
+
+/* Masque les boutons d'édition lorsque l'option cochée */
+.page-tab.clear .post_details {
+    display: none;
+}
