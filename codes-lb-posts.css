@@ -832,7 +832,7 @@ button[onglet].active::before { background: var(--a); }
 
 /* COLONNES */
 .tx-cols-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:18px 0;}
-.tx-cols-wide{display:grid;grid-template-columns:1fr 240px;gap:24px;margin:10px 0;align-items:start;}
+.tx-cols-wide{display:grid;grid-template-columns:1fr 240px;gap:56px;margin:10px 0;align-items:start;}
 
 /* IMAGES */
 .tx-img-right{float:right;margin:4px 0 16px 20px;max-width:240px;width:42%;}
