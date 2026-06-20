@@ -831,7 +831,7 @@ button[onglet].active::before { background: var(--a); }
 .tx-table tr:hover td{background:rgba(255,255,255,.02);}
 
 /* COLONNES */
-.tx-cols-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:18px 0;}
+.tx-cols-2{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin:18px 0;}
 .tx-cols-wide{display:grid;grid-template-columns:1fr 240px;gap:56px;margin:10px 0;align-items:start;}
 
 /* IMAGES */
