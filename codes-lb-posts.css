@@ -3,7 +3,7 @@
 /* - 2. CODES MISE EN FORME -------------------------------- */
 /* - 3. EDITEUR DE POSTS ----------------------------------- */
 /* - 4. BALISES BBCODE SPECIALES --------------------------- */
-/* - 5. SUJETS A ONGLETS ----------------------------------- */
+/* - 5. ANNEXE & SUJETS A ONGLETS --------------------------- */
 /* - 5. CODES MISE EN FORME GUIDEBOOK ---------------------- */
 /* ========================================================= */
 
@@ -644,8 +644,20 @@ a.sceditor-button {
 .quantico {font-family: Quantico;}
 
 /* ========================================================= */
-/* - 5. SUJETS A ONGLETS ----------------------------------- */
+/* - 5. ANNEXE & SUJETS A ONGLETS -------------------------- */
 
+/* --- POSTES ANNEXES --- */
+.post:has(.annexe) {
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Cache le profil du message */
+.post:has(.annexe) .post_profile {
+    display: none;
+}
+
+/* --- SUJET A ONGLET --- */
 .menu-tab {
   max-width: 156px;
   min-width: 156px;
