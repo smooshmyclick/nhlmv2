@@ -478,7 +478,7 @@ button[onglet].active::before { background: var(--a); }
 
 /* TITRES */
 .tx-h1{font-family:var(--ff);font-size:clamp(18px,1vw,28px);line-height:1;letter-spacing:-.02em;text-transform:uppercase;color:var(--t0);margin-bottom:16px;}
-.tx-h2{font-family:var(--ff);font-size:clamp(10px,0.9vw,18px);line-height:1.1;letter-spacing:-.01em;text-transform:uppercase;color:var(--t0);margin:40px 0 14px;display:flex;align-items:center;gap:14px;}
+.tx-h2{font-family:var(--ff);font-size:clamp(10px,0.9vw,18px);line-height:1.1;letter-spacing:-.01em;text-transform:uppercase;color:var(--t0);display:flex;align-items:center;gap:14px;}
 .tx-h2::after{content:'';flex:1;height:1px;background:var(--line2);}
 .tx-h3{font-family:var(--ff);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--t1);margin:28px 0 10px;padding-left:10px;border-left:2px solid var(--a);line-height:1.2;}
 .tx-h4{font-family:var(--fm);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--a);margin:20px 0 8px;}
