@@ -514,7 +514,7 @@ button[onglet].active::before { background: var(--a); }
 .tx-box-icon i.bi{font-size:18px;line-height:1;display:block;}
 .tx-box-body{flex:1;min-width:0;}
 .tx-box-title{font-family:var(--fm);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px;}
-.tx-box-body p{font-family:var(--ft);font-size:13.5px;line-height:1.75;margin:0;}
+.tx-box-body p{font-family:var(--ft);font-size:12.5px;margin:0;}
 .tx-info{border-color:var(--line2);background:var(--surface);}
 .tx-info .tx-box-icon i.bi{color:var(--t2);}
 .tx-info .tx-box-title{color:var(--t2);}
