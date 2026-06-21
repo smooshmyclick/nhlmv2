@@ -1,11 +1,28 @@
+/* ========================================= SOMMAIRE ====== */
+/* - 0. ELEMENTS MASQUES ----------------------------------- */
+/* - 1. BOUTONS FICHES ET JOUEUR --------------------------- */
+/* - 2. ZONE CENTRALE -------------------------------------- */
+/* - 3. ZONE AVATAR MEMBRE --------------------------------- */
+/* - 4. COMPETENCES ET ARSENAL ----------------------------- */
+/* ========================================================= */
+/* Template : profile_view_body */
 
 
 
+/* ========================================================= */
+/* - 0. ELEMENTS MASQUES ----------------------------------- */
+[data-champ*="Fiche personnage"] label,
+[data-champ="Chronologie"] label,
+[data-champ="Fiche de liens"] label, 
+[data-champ="Fiche PNJ"] label, 
+[data-champ="Registre personnel"] label,
+[data-champ="Image de bannière"] label,
+[data-champ="Image de profil"] label,
+[data-champ="Compétences & Arsenal"] label,
+[data-champ="Crédits"] label {
+    display:none;
+}
 
-/* --- 7.3 EDITION DE PROFIL -------------------------------------------*/
-/* --- Template : profile_add_body ------------------------------------ */
-
-/* === CHAMPS DE PROFIL === */
 .profile_field label {
   font-size: 0; /* cache le " : " */
 }
@@ -17,6 +34,8 @@
   color: var(--t2);
 }
 
+/* ========================================================= */
+/* - 1. BOUTONS FICHES ET JOUEUR --------------------------- */
 .user_profile {
   display: grid;
   grid-template-columns: max-content 1fr max-content;
@@ -25,7 +44,7 @@
   margin-bottom: 10px;
 }
  
-/* ----- Colonne gauche : boutons fiches + bouton joueur ----- */
+/* --- Colonne gauche : boutons fiches + bouton joueur --- */
 .profile_col-left {
   grid-area: left;
   display: flex;
@@ -157,7 +176,7 @@
   -webkit-mask-image: url("https://api.iconify.design/pixelarticons/card-text.svg");
 }
 
-/* -------- Profil Joueur -------*/
+/* --- Profil Joueur --- */
 .profil_img_btn {
   position: relative;
   display: inline-block;
@@ -229,7 +248,8 @@
     overflow-wrap: break-word;
 }
 
-/* ----- Zone centrale : bannière + nom + rôle + à propos + bulle ----- */
+/* ========================================================= */
+/* - 2. ZONE CENTRALE -------------------------------------- */
 .profile_main {
   grid-area: main;
   position: relative;
@@ -525,7 +545,8 @@
 }
 
  
-/* ----- Colonne droite ----- */
+/* ========================================================= */
+/* - 3. ZONE AVATAR MEMBRE --------------------------------- */
 .profile_col-right {
   grid-area: right;
   display: flex;
@@ -669,7 +690,8 @@
     display: none;
 }
 
-/* Zone compétences et arsenal */
+/* ========================================================= */
+/* - 4. COMPETENCES ET ARSENAL ----------------------------- */
 .skills_card {
   background: var(--card);
   border-radius: var(--r6);
