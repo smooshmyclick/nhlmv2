@@ -886,8 +886,8 @@
 }
 /* Nouveau message */
 .cate-c3 .forum.cat_new {
-  border-color: var(--ab);
   box-shadow: 0 0 0 1px var(--ad), inset 0 0 40px var(--ag);
+  border: 2px solid var(--ab);
 }
 
 /* IMAGE DE COUVERTURE */
@@ -1093,8 +1093,8 @@
 }
 /* Nouveau message */
 .cate-c5 .forum.cat_new {
-  border-color: var(--ab);
   box-shadow: 0 0 0 1px var(--ad), inset 0 0 40px var(--ag);
+  border: 2px solid var(--ab);
 }
 
 
@@ -1320,8 +1320,8 @@
 }
 
 .cate-c1 .forum.row.cat_new {
-  border-color: var(--ab);
   box-shadow: 0 0 0 1px var(--ad), inset 0 0 40px var(--ag);
+  border: 2px solid var(--ab);
 }
 .cate-c1 .forum.row.cat_new::before {
   content: '';
