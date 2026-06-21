@@ -958,10 +958,11 @@
   letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--t1);
-  background: var(--deep);
+  background: var(--ad);
   padding: 4px 8px;
   border-radius: var(--r2);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+  transform: translate(1px, 0px) rotate(-3deg);
 }
 
 /* statut + dernier post */
@@ -1262,6 +1263,7 @@
   background: rgba(80,10,10,.65);
   padding: 4px 8px;
   border-radius: var(--r2);
+  transform: translate(1px, 0px) rotate(-3deg);
   clip-path: polygon(
     0 0,
     100% 0,
