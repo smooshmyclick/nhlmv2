@@ -2603,9 +2603,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
     0 calc(100% - 12px)
   );
 }
-.hub-cst .cs:first-child {background: var(--ag);}
-.hub-cst .cs strong { font-family: var(--fm); font-size: 12px; color: var(--t1); line-height: 1; }
-.hub-cst .cs:first-child strong {color: var(--a); font-weight: 400; font-size: 9px;}
+.hub-cst .cs strong { line-height: 1;font-size: 7.5px;letter-spacing: .12em;color: var(--t2); }
 .hub-cst .cs span   { font-size: 7.5px; text-transform: uppercase; letter-spacing: .12em; color: var(--t2); }
 
 /* Section membres en ligne */
