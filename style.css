@@ -2509,18 +2509,17 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 }
 .hub_lastUser .lastUser-link {
   display: block;
-  font-family: 'Lacquer', var(--ff);
-  font-size: 18px;
+  font-family: var(--ff);
+  font-size: 12px;
   color: var(--a);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: .04em;
   line-height: 1.1;
-  text-shadow: 0 0 14px var(--ad);
   overflow: hidden;
   text-overflow: ellipsis;
   background: none;
-  text-shadow: 1px 2px 0 rgba(0,0,0,.3);
+  text-shadow: 1px 2px 0 rgba(0, 0, 0, .3);
 }
 
 
