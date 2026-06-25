@@ -321,9 +321,7 @@ form[action="/memberlist"] {
   align-items: center;
   gap: 4px;
 }
-.ml-card-msgs strong {
-  font-size: 10px;
-}
+.ml-card-msgs strong {font-weight: 400;}
 .ml-card-act-date {
   font-family: var(--fm);
   font-size: 9px;
