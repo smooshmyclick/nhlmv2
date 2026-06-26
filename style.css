@@ -692,10 +692,22 @@
   border-top-right-radius: var(--r7);
   border-top-left-radius: var(--r7);
 }
-
 /* --- Predef Factions ---*/
 
-/* --- Game : Nihilum Battle Royal Simulator -------*/ 
+/* Boutons acces rapide ----- */
+.quick-access-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+  width: 20%;
+  padding: 20px 15px 0;
+}
+
+.quick-access-wrap .topsite-btn {
+  padding: 10px;
+}
+
+/* --- Guide du nouveau -------*/ 
 .game-wrapper {
   position: absolute;
   right: -14px;
