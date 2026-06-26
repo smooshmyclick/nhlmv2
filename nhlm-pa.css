@@ -264,7 +264,34 @@
   display: none;
 }
 
-/* ── PANNEAU PRINCIPAL ── */
+/* Alertes pop-up nouvelle notif */
+.alert_notif,
+#alert_notif,
+.notif_alert{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:320px;
+    padding:12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    border-radius:10px;
+    z-index: 999;
+}
+
+/* Avatar petit rond à gauche */
+.alert_notif img,
+#alert_notif img,
+.notif_alert img{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+/* --- PANNEAU PRINCIPAL --- */
 #notiffi_panel {
   position: fixed;
   top: 82px;
