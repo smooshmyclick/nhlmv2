@@ -6,6 +6,7 @@
 /* ------ 1.1.3 RECHERCHE LORE ----------------------------- */
 /* --- 1.2. SIDEBAR ---------------------------------------- */
 /* - 2. HUB ------------------------------------------------ */
+/* - 3. ZONE PARTENAIRES ----------------------------------- */
 /* ========================================================= */
 
 
@@ -2409,3 +2410,111 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 .btn-irreel:hover .btn-faction-icon { filter: none; }
 .btn-irreel:hover .btn-faction-label { background: transparent; }
 .btn-faction-label span { color: var(--t1); }
+
+
+/* ========================================================= */
+/* - 3. ZONE PARTENAIRES ----------------------------------- */
+
+.prt-wrap {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin: 45px 80px 0 80px;
+  border-radius: var(--r7);
+}
+.prt-cc {
+    display: flex;
+    flex-direction: column;
+    background: var(--card);
+    padding: 16px;
+    border-radius: var(--r8);
+    margin-right: 10px;
+    gap: 10px;
+    border-top-left-radius: 0;
+}
+.prt-cc a {
+    display: block;
+    background: none;
+}
+.prt-cc img {
+    display: block;
+    width: 100%;
+    height: 50px;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+    border-radius: var(--r2);
+}
+.prt-cc img:hover { filter: grayscale(0%);}
+.prt-def {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: stretch;
+    background: var(--card);
+    padding: 16px;
+    border-radius: var(--r8);
+    border-top-right-radius: 0;
+    gap: 10px;
+    padding-top: 10px;
+}
+.prt-def a {
+    display: block;
+    background: none;
+}
+.prt-def img {
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+    border-radius: var(--r2);
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.prt-def img:hover { filter: grayscale(0%);}
+.prt-tcc {
+  margin-top: -25px;
+  font-family: var(--fm);
+  margin-left: auto;
+  color: var(--t2);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+}
+.prt-new {
+  background: var(--ab);
+  padding: 16px;
+  border-top-right-radius: var(--r8);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%);
+  height: fit-content;
+}
+.prt-new svg {
+    width: 24px;
+    height: 24px;
+    color: var(--a);
+}
+.prt-new a { background: none; }
+.prt-new svg:hover {
+  color: var(--t0);
+  animation: vb-flicker .12s steps(1) 0s 2;
+}
+.prt-t { 
+  grid-column: 1 / -1;
+  margin-top: -18px;
+  font-family: var(--fm);
+  margin-left: auto;
+  color: var(--t2);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+}
+.prt-tt {
+  background: var(--ab);
+  border-top-left-radius: var(--r8);
+  clip-path: polygon(0 calc(100% - 18px), 18px 100%, 100% 100%, 100% 0, 0 0);
+  font-family: var(--fn);
+  height: 110px;
+  letter-spacing: 2px;
+  font-size: 30px;
+  line-height: 1;
+  padding: 9px;
+  color: var(--deep);
+}
