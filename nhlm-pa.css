@@ -2227,6 +2227,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   opacity: 0;
   transition: opacity .45s ease, transform .5s cubic-bezier(.4,0,.2,1);
   transform: scale(1.03);
+  filter: brightness(0.8);
 }
 .hub-carousel-slide.active  { opacity: 1; transform: scale(1); }
 .hub-carousel-slide.leaving { opacity: 0; transform: scale(1.04); }
@@ -2264,6 +2265,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 .hub-carousel-btns {
   display: flex;
   flex-shrink: 0;
+  margin-left: auto;
 }
 .hub_groups .group {
   display: flex;
@@ -2276,7 +2278,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   overflow: hidden;
   text-decoration: none;
   transition: background .2s;
-  margin: 12px auto;
+  margin: 4px;
   border-radius: var(--r6);
   border: 1px solid var(--line);
   background: var(--line);
