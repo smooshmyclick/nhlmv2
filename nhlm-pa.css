@@ -2208,7 +2208,6 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   display: flex;
   flex-direction: column;
   background: transparent;
-  border: 1px solid var(--line2);
   border-radius: var(--r8);
   overflow: hidden;
   transition: border-color .3s;
@@ -2230,18 +2229,13 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 }
 .hub-carousel-slide.active  { opacity: 1; transform: scale(1); }
 .hub-carousel-slide.leaving { opacity: 0; transform: scale(1.04); }
-.hub-carousel-overlay {
-  position: absolute; inset: 0; z-index: 1;
-  pointer-events: none;
-  background: linear-gradient(to top, rgba(0,0,0,.9) 0%, rgba(0,0,0,.3) 50%, transparent 80%);
-}
 .hub-carousel-info {
   position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
   padding: 12px 14px 14px;
 }
 .hub-carousel-name {
   font-family: var(--ff), sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: .02em;
@@ -2250,37 +2244,41 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   transition: color .3s;
 }
 .hub-carousel-count {
-  font-family: var(--fm), monospace;
-  font-size: 9px;
-  color: rgba(255,255,255,.6);
+  font-family: var(--fm);
+  color: var(--t0);
   margin-top: 4px;
+  font-size: 14px;
+
 }
-.hub-carousel-count strong { color: #fff; font-size: 11px; }
+.hub-carousel-count strong { 
+  color: var(--t0);
+  font-size: 11px;
+  background: var(--a);
+  padding: 3px 6px;
+  border-radius: var(--r2);
+}
 
 /* Boutons factions */
 .hub-carousel-btns {
   display: flex;
-  border-top: 1px solid var(--line2);
-  background: var(--deep);
   flex-shrink: 0;
 }
 .hub_groups .group {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding: 10px 6px;
+  padding: 6px 8px;
   border: none;
-  border-right: 1px solid var(--line);
-  border-radius: 0;
   background: transparent;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   text-decoration: none;
   transition: background .2s;
+  margin: 12px auto;
+  border-radius: var(--r6);
 }
 .hub_groups .group:last-child { border-right: none; }
 
