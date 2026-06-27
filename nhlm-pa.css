@@ -2251,6 +2251,10 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   color: var(--t0);
   margin-top: 4px;
   font-size: 14px;
+  width: fit-content;
+  border-radius: var(--r4);
+  padding: 4px 8px 6px 5px;
+  background: var(--ad);
 
 }
 .hub-carousel-count strong { 
