@@ -1859,8 +1859,6 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 
 /* Section générique */
 .hub-s {
-  background: var(--card);
-  border-radius: var(--r6);
   padding: 10px 12px;
 }
 
@@ -1870,8 +1868,6 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid var(--line);
 }
 .hub-sl {
   font-size: 9px;
@@ -1927,6 +1923,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   display: flex;
   flex-direction: column;
   min-height: 0;
+  border-radius: var(--r6);
 }
 .hub-s:has(.onlineUsers-list) .hub-sh {
   padding: 4px 10px;
@@ -2189,18 +2186,19 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-family: var(--ff);
+  color: var(--t2);
 }
 .hub-fst .fs { 
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px; }
-.hub-fst .fs strong { font-weight: 400; color: var(--t2); font-size: 10px; }
+.hub-fst .fs strong { font-weight: 400; font-size: 10px; }
 .hub-fst .fs span {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: .14em;
-  color: var(--t2);
 }
 
 /* Carrousel factions */
@@ -2235,6 +2233,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 .hub-carousel-info {
   position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
   padding: 12px 14px 14px;
+  margin-left: 25px;
 }
 .hub-carousel-name {
   font-family: var(--ff), sans-serif;
