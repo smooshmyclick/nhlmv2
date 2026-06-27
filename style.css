@@ -894,7 +894,7 @@
   background: var(--card);
   border-radius: var(--r8);
   overflow: hidden;
-  clip-path: polygon(18px 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%, 0 18px);
+  clip-path: polygon(0% 100%, 0% 0%, 10% 0%, 16% 2.5%, 30% 2.5%, 36% 0%, 100% 0%, 100% 100%);
 }
 /* Nouveau message */
 .cate-c3 .forum.cat_new {
@@ -1102,7 +1102,7 @@
   grid-template-columns: 580px 1fr 180px;
   grid-template-rows: 1fr auto;
   height: 254px;
-  clip-path: polygon(18px 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%, 0 18px);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%, 1.2% 70%, 1.2% 35%, 0% 30%);
 }
 /* Nouveau message */
 .cate-c5 .forum.cat_new {
@@ -1321,6 +1321,7 @@
   border-radius: var(--r12);
   overflow: hidden;
   margin-bottom: 6px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%, 1.2% 70%, 1.2% 35%, 0% 30%);
 }
 .cate-c1 .forum.row::after {
   content: '';
