@@ -1008,7 +1008,7 @@
   line-height: 1.5;
 }
 
-.cate-c3 .forum_avatar { box-shadow: 0 0 0 3px rgba(0,0,0,.5), 0 0 12px var(--ag); border: 2px solid var(--faction-color, var(--ag)); }
+.cate-c3 .forum_avatar { outline: 3px solid var(--faction-color, var(--ag)); }
 
 .cate-c3 .forum_avatar img {
   width: 100%;
@@ -1261,7 +1261,7 @@
 }
 .cate-c5 .forum-img      { display: none; }
 .cate-c5 .forum_lastpost { flex: 1; width: auto; }
-.cate-c5 .forum_avatar   { box-shadow: 0 0 0 3px rgba(0,0,0,.5), 0 0 12px var(--ag); border: 2px solid var(--faction-color, var(--ag)); }
+.cate-c5 .forum_avatar   { outline: 3px solid var(--faction-color, var(--ag)); }
 .cate-c5 .forum_lastpost .lastpost_link:hover { color: var(--t0); }
 
 
@@ -1536,8 +1536,8 @@
 
 /* Avatar circulaire à gauche */
 .cate-c1 .forum_avatar {
-  border: 2px solid var(--faction-color, var(--ag));
-  box-shadow: 0 0 0 3px rgba(0,0,0,.5), 0 0 12px var(--ag);
+  border: 2px solid var(--card);
+  outline: 3px solid var(--faction-color, var(--ag));
   background: var(--raise);
   margin: 28px 6px;
   position: relative;
@@ -1659,8 +1659,8 @@
   border-radius: var(--ro);
   overflow: hidden;
   background: var(--card2);
-  box-shadow: 0 0 0 3px rgba(0,0,0,.5), 0 0 12px var(--ag);
-  border: 2px solid var(--faction-color, var(--ag));
+  border: 2px solid var(--card);
+  outline: 3px solid var(--faction-color, var(--ag));
  }
 .cate-c2 .forum_avatar img {
   width: 100%;
