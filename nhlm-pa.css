@@ -1959,8 +1959,8 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   cursor: pointer;
 }
 .onlineUsers-list .user-avatar {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -2000,8 +2000,8 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   gap: 6px;
 }
 .onlineUsers-list .guest-count {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: var(--card2);
   outline: 1px solid var(--line2);
@@ -2010,7 +2010,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   align-items: center;
   justify-content: center;
   font-family: var(--fm);
-  font-size: 9px;
+  font-size: 7px;
   color: var(--t1);
 }
 .onlineUsers-list .guest-label {
