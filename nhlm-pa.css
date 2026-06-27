@@ -2072,7 +2072,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--ad) transparent;
-  max-height: 150px;
+  max-height: 170px;
 }
 .hub_lastConnected .name-member a {
   display: inline-flex;
