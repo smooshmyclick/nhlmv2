@@ -1928,10 +1928,11 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 .hub-s:has(.onlineUsers-list) .hub-sh {
   padding: 4px 10px;
   margin-bottom: 0;
-  background: var(--ad);
   border-bottom: 1px solid var(--line2);
   gap: 10px;
   flex-shrink: 0;
+  background: var(--card);
+  font-family: var(--ff);
 }
 
 /* Liste avatars */
@@ -2038,9 +2039,8 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 .hub_lastConnected .lastConnected-text {
   display: block;
   padding: 4px 10px;
-  background: var(--ad);
   border-bottom: 1px solid var(--line2);
-  font-family: var(--fm);
+  font-family: var(--ff);
   font-size: 9px;
   color: var(--t2);
   text-transform: uppercase;
