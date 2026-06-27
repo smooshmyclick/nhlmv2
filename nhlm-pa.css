@@ -1915,7 +1915,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
     0 calc(100% - 12px)
   );
 }
-.hub-cst .cs strong { line-height: 1;font-size: 7.5px;letter-spacing: .12em;color: var(--t2); }
+.hub-cst .cs strong { line-height: 1;font-size: 7.5px;letter-spacing: .12em;color: var(--t2); font-weight: 200; }
 .hub-cst .cs span   { font-size: 7.5px; text-transform: uppercase; letter-spacing: .12em; color: var(--t2); }
 
 /* Section membres en ligne */
