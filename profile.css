@@ -375,6 +375,7 @@
   padding: 5px 16px;
   border-radius: var(--r7);
 }
+.prf_topics_btn:hover { background:var(--ab); }
 
 /* Faction, rôle */
 .profile_sub {
