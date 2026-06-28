@@ -329,6 +329,8 @@
   overflow: hidden;
   background: var(--card2);
 }
+
+.prf_posts:hover { background: var(--ab); }
  
 .posts_count {
   display: flex;
