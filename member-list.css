@@ -21,7 +21,7 @@ form[action="/memberlist"] {
 .userlist_profil {
   position: relative;
   border-radius: var(--r6);
-  clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px));
+  clip-path: polygon(0% 100%, 0% 0%, 10% 0%, 16% 2.5%, 50% 2.5%, 56% 0%, 100% 0%, 100% 100%);
   overflow: hidden;
   aspect-ratio: 3/5;
   background: var(--deep);
@@ -32,7 +32,7 @@ form[action="/memberlist"] {
 }
 
 /* Avatar */
-.userlist_profil .userlist_avatar {
+ .userlist_avatar {
   position: absolute;
   inset: 0;
   width: 100%;
