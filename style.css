@@ -893,8 +893,6 @@
   flex-direction: column;
   background: var(--card);
   border-radius: var(--r8);
-  overflow: hidden;
-  clip-path: polygon(0% 100%, 0% 0%, 10% 0%, 16% 2.5%, 30% 2.5%, 36% 0%, 100% 0%, 100% 100%);
 }
 /* Nouveau message */
 .cate-c3 .forum.cat_new {
@@ -910,6 +908,18 @@
   flex-shrink: 0;
   color: transparent;
   font-size: 0;
+}
+.cate-c3 .forum-cover::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 25%;
+  transform: translateX(-50%);
+  width: 115px;
+  height: 25px;
+  background: var(--a2);
+  z-index: 1;
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%);
 }
 
 .cate-c3 .forum-cover img {
