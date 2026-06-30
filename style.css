@@ -893,7 +893,7 @@
   flex-direction: column;
   background: var(--card);
   border-radius: var(--r8);
-  border: 1px solid var(--a);
+  border: 1px solid var(--ab);
 }
 /* Nouveau message */
 .cate-c3 .forum.cat_new {
