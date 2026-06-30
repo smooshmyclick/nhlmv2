@@ -10,7 +10,8 @@
 
 .forum-holo .post_profile,
 .forum-holo .post_date,
-.forum-holo .post-foot { 
+.forum-holo .post-foot, 
+.forum-holo .top-msg { 
   display: none
 }
 
