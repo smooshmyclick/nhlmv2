@@ -1014,7 +1014,7 @@
 
 .cate-c3 .forum_lastpost {
   flex: 1;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--t2);
   line-height: 1.5;
 }
@@ -1595,7 +1595,7 @@
   z-index: 1;
   overflow: hidden;
   font-family: var(--ft);
-  font-size: 11px;
+  font-size: 12px;
   color: var(--t2);
   line-height: 1.6;
   min-width: 0;
@@ -1933,7 +1933,7 @@
 
 .cate-c6 .forum_lastpost span {
   font-family: var(--ft);
-  font-size: 11px;
+  font-size: 12px;
   color: var(--t3);
   line-height: 1.4;
   letter-spacing: .05em;
