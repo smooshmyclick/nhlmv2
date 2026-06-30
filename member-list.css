@@ -13,8 +13,8 @@ form[action="/memberlist"] {
 /* Grille de cartes */
 .userlist {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
 }
 
 /* Carte membre */
@@ -210,14 +210,16 @@ form[action="/memberlist"] {
 /* Filet faction sur le côté (coloré par JS) */
 .ml-card-faction-line {
   position: absolute;
-  top: 0; right: 0;
-  width: 8px;
-  height: 100%;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  height: 15px;
   background: var(--t2);
   z-index: 3;
   pointer-events: none;
   transition: width .2s ease, height .2s ease, opacity .2s ease;
   opacity: 1;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px));
 }
 
 /* Dégradé de lisibilité bas de carte */
