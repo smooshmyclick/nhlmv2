@@ -10,11 +10,11 @@ form[action="/memberlist"] {
   width: 100%;
 }
 
-/* Grille de cartes */
+/* Grille */
 .userlist {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
 }
 
 /* Carte membre */
