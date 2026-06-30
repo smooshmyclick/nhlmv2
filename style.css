@@ -1356,7 +1356,7 @@
   background-repeat: no-repeat;
   filter: brightness(0.8);
 }
-.cate-c5 .forum.row::before {
+.cate-c1 .forum.row::before {
   content: "";
   position: absolute;
   left: -12px;
