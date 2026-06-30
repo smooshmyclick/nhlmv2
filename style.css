@@ -1460,12 +1460,12 @@
   font-size: 10px;
   letter-spacing: .07em;
   text-transform: uppercase;
-  border: 1px solid var(--line2);
-  border-radius: var(--rp);
-  color: var(--t2);
-  background: rgba(0,0,0,.4);
+  border-radius: var(--r4);
+  color: var(--t1);
+  background: var(--ab);
   text-decoration: none;
   transition: border-color .18s, color .18s, background .18s, box-shadow .18s;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
 }
 .cate-c1 .forum_sub a::before {
   content: '―';
