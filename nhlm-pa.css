@@ -2015,7 +2015,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 }
 .onlineUsers-list .guest-label {
   font-family: var(--ft);
-  font-size: 12px;
+  font-size: 13px;
   color: var(--t2);
   text-align: center;
   max-width: 52px;
