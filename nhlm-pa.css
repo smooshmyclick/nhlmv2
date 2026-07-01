@@ -2187,7 +2187,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   align-items: center;
   width: 100%;
   font-family: var(--ff);
-  color: var(--t2);
+  color: var(--tt);
 }
 .hub-fst .fs { 
   display: flex;
