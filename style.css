@@ -1110,7 +1110,7 @@
 .cate-c5 .forums { gap:14px }
 .cate-c5 .forum {
   display: grid;
-  grid-template-columns: 580px 1fr 180px;
+  grid-template-columns: 55% 1fr 180px;
   grid-template-rows: 1fr auto;
   height: 254px;
   border: 1px solid var(--ab);
@@ -1479,6 +1479,7 @@
   color: var(--a);
   background: var(--ag);
   box-shadow: 0 0 8px var(--ag);
+  transform: rotate(0);
 }
 .cate-c1 .forum_sub a:hover::before { opacity: 1; }
 
