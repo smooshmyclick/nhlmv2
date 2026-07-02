@@ -257,7 +257,6 @@ form[action="/memberlist"] {
 .userlist_profil:hover .ml-card-actions {
   opacity: 1;
   transform: translateX(0);
-  right: 0px;
 }
 .ml-card-btn {
   width: 28px; height: 28px;
