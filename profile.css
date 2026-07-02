@@ -616,8 +616,8 @@
 .profile_avatar_wrap::before {
   top: -6px;
   left: -26px;
-  border-bottom: 2px solid var(--gcolor);
-  border-right: 2px solid var(--gcolor);
+  border-top: 2px solid var(--gcolor);
+  border-left: 2px solid var(--gcolor);
   border-radius: 2px 0 0 0;
 }
 /* Coin bas droit */
