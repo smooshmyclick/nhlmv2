@@ -401,7 +401,7 @@
   font-size: 12px;
 }
 .profile_role .field_uneditable {
-  background: var(--ad);
+  background: color-mix(in srgb, var(--gcolor), transparent 90%);
   padding: 6px 8px;
   border-radius: var(--r4);
   width: fit-content;
@@ -490,8 +490,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background: var(--ag);
-    border: 2px solid var(--a);
+    background: color-mix(in srgb, var(--gcolor), transparent 90%);
+    border: 2px solid color-mix(in srgb, var(--gcolor), transparent 30%);
     border-radius: var(--r6);
     padding: 6px 16px 10px 45px;
     margin-left: 35px;
@@ -525,7 +525,7 @@
   border-radius: var(--r6);
   padding: 8px 12px 14px 12px;
   margin: 10px 17px 0 17px;
-  border: 1px solid var(--ad);
+  border: 1px solid color-mix(in srgb, var(--gcolor), transparent 90%);
 }
 .quote_avatar {
   width: 64px;
@@ -616,16 +616,16 @@
 .profile_avatar_wrap::before {
   top: -6px;
   left: -26px;
-  border-top: 2px solid var(--a);
-  border-left: 2px solid var(--a);
+  border-bottom: 2px solid var(--gcolor);
+  border-right: 2px solid var(--gcolor);
   border-radius: 2px 0 0 0;
 }
 /* Coin bas droit */
 .profile_avatar_wrap::after {
     bottom: -8px;
     right: -8px;
-    border-bottom: 2px solid var(--a);
-    border-right: 2px solid var(--a);
+    border-bottom: 2px solid var(--gcolor);
+    border-right: 2px solid var(--gcolor);
     border-radius: 0 0 2px 0;
 }
 .profile_avatar_wrap:hover::before,
