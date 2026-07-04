@@ -29,6 +29,7 @@
   margin-bottom: 10px;
   margin-top: 20px;
   margin-left: 310px;
+  background: var(--cat1-bg);
 }
 
 .top-msg > .user_field {
