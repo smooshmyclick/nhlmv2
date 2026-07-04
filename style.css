@@ -1019,7 +1019,7 @@
   line-height: 1.5;
   background: var(--card3);
   padding: 8px 20px;
-  border-radius: var(--r4);
+  border-radius: var(--r8);
 }
 
 .cate-c3 .forum_avatar { outline: 3px solid var(--faction-color, var(--ag)); }
@@ -1294,7 +1294,7 @@
   line-height: 1.5;
   background: var(--card3);
   padding: 8px 15px;
-  border-radius: var(--r4);
+  border-radius: var(--r8);
 .cate-c5 .forum_avatar   { outline: 3px solid var(--faction-color, var(--ag)); }
 .cate-c5 .forum_lastpost .lastpost_link:hover { color: var(--t0); }
 
