@@ -225,13 +225,7 @@ form[action="/memberlist"] {
 .ml-card-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,.94) 0%,
-    rgba(0,0,0,.72) 28%,
-    rgba(0,0,0,.2)  55%,
-    transparent     78%
-  );
+  background: linear-gradient( to top, var(--card2) 0%, rgba(0,0,0,.72) 28%, rgba(0,0,0,.2) 55%, transparent 78% );
   pointer-events: none;
 }
 
