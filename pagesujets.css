@@ -1,1 +1,239 @@
 
+
+
+/* PROFIL DES SUJETS */
+/* Header des postes par profil */
+.top-msg .user_field {display: none;}
+.top-msg .field-citation,
+.top-msg .field-image-de-profil,
+.top-msg .field-image-de-banniere {
+  display: block;
+}
+
+.top-msg {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  position: relative;
+  background: color-mix(in srgb, var(--gcolor), transparent 90%);
+  border-radius: var(--r8);
+  max-height: 100px;
+  min-height: 100px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 310px;
+}
+
+.top-msg > .user_field {
+  min-height: 0;
+  min-width: 0;
+}
+
+.top-msg .field_label {
+    display: none;
+}
+
+.top-msg .field-image-de-profil {
+  grid-row: 2;
+  grid-column: 1;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto 20px;
+  border: 6px solid var(--deep);
+}
+
+.top-msg .field-citation {
+  grid-row: 2;
+  grid-column: 2 / 8;
+  z-index: 1;
+  margin: auto 30px;
+  font-style: italic;
+  color: var(--t1);
+  font-family: var(--fsr);
+}
+.top-msg .field-image-de-profil .field_content,
+.top-msg .field-image-de-profil img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-msg .field-image-de-banniere {
+  grid-row: 2;
+  grid-column: 2 / 8;
+  z-index: 0;
+  width: 40%;
+  margin-left: auto;
+  overflow: hidden;
+  border-radius: var(--r8);
+}
+
+.top-msg .field-image-de-banniere .field_content {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.top-msg .field-image-de-banniere img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% center;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 65%);
+  mask-image: linear-gradient(to right, transparent 0%, black 65%);
+  opacity: .35;
+}
+
+/* Profil gauche */
+.ps-champs .field-citation,
+.ps-champs .field-image-de-profil,
+.ps-champs .field-image-de-banniere,
+.ps-champs .field-faction, 
+.ps-champs .field-role,
+.ps-champs .field-titre-de-legende {
+  display: none;
+}
+
+.portrait-nameplate .user_field {display: none;}
+.portrait-nameplate .field-faction,
+.portrait-nameplate .field-role {
+  display: block;
+}
+
+.post_avatar {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.post_avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.post_avatar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 120px;
+    background: linear-gradient(
+        to top,
+        var(--deep) 0%,
+        var(--deep) 20%,
+        transparent 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+.portrait-nameplate {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.field-faction {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: center;
+}
+
+.portrait-name {
+  grid-column: 2;
+  grid-row: 1;
+  font-family: var(--ff);
+  overflow-wrap: break-word;
+  word-break: break-word;
+  width: 230px;
+}
+
+.field-role {
+  grid-column: 2;
+  grid-row: 2;
+  font-family: var(--fm);
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  width: 230px;
+}
+
+.field-faction .label,
+.field-role .label { 
+  display: none; }
+
+.field-faction img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Spoiler profil */
+.ps-spoiler {
+  position: absolute;
+  top: -18px;
+  right: 130px;
+  z-index: 10;
+}
+
+.ps-spoiler summary {
+    list-style: none;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
+
+.ps-spoiler summary::-webkit-details-marker {
+    display: none;
+}
+
+.ps-spoiler summary::before {
+  content: "﹀";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 16px;
+  background: var(--gcolor);
+  color: var(--deep);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px));
+  margin-top: 18px;
+}
+.ps-spoiler summary:hover::before {
+  height: 20px;
+  transform: translateY(-1px);
+  filter: brightness(1.15);
+}
+
+.ps-spoiler[open] summary::before {
+  content: "︿";
+  height: 32px;
+}
+
+.ps-champs {
+  position: absolute;
+  top: 300px;
+  right: -105px;
+  width: 250px;
+  padding: 12px;
+  background: var(--card2);
+  border-radius: var(--r6);
+  transform: rotate(-4deg);
+  border: 1px solid var(--gcolor);
+  box-shadow: 0 4px 10px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.06);
+}
