@@ -401,7 +401,7 @@
   font-size: 12px;
 }
 .profile_role .field_uneditable {
-  background: color-mix(in srgb, var(--gcolor), transparent 90%);
+  background: color-mix(in srgb, var(--gcolor), transparent 70%);
   padding: 6px 8px;
   border-radius: var(--r4);
   width: fit-content;
@@ -415,7 +415,7 @@
   font-size: 12px;
 }
 .profile_age .field_uneditable {
-  background: var(--ad);
+  background: color-mix(in srgb, var(--gcolor), transparent 70%);
   padding: 6px 8px;
   border-radius: var(--r4);
   width: fit-content;
