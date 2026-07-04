@@ -1549,6 +1549,7 @@
   overflow: hidden;
   transition: border-color .35s;
   gap: 0px;
+  height: fit-content;
 }
 .cate-c1 .forum_content:hover { border-color: var(--ab); background: var(--surface); }
 
@@ -1587,7 +1588,7 @@
   border: 2px solid var(--card);
   outline: 3px solid var(--faction-color, var(--ag));
   background: var(--raise);
-  margin: 28px 6px;
+  margin: 6px;
   position: relative;
   z-index: 1;
 }
@@ -1613,15 +1614,6 @@
   color: var(--t2);
   line-height: 1.6;
   min-width: 0;
-}
-.cate-c1 .forum_lastpost::before {
-  content: '// DERNIER MESSAGE';
-  display: block;
-  font-family: var(--fm);
-  font-size: 8.5px;
-  letter-spacing: .32em;
-  text-transform: uppercase;
-  margin-bottom: 8px;
 }
 
 .cate-c1 .forum_lastpost .lastpost_link {
