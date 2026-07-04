@@ -1,14 +1,12 @@
 /* ========================================= SOMMAIRE ====== */
-/* - 0. ELEMENTS MASQUES ----------------------------------- */
-/* - 1. BOUTONS FICHES ET JOUEUR --------------------------- */
-/* - 2. ZONE CENTRALE -------------------------------------- */
-/* - 3. ZONE AVATAR MEMBRE --------------------------------- */
-/* - 4. COMPETENCES ET ARSENAL ----------------------------- */
+/* - 1. PPROFIL DANS LES SUJETS ---------------------------- */
 /* ========================================================= */
-/* Template : profile_view_body */
+/* Template : viewtopic_body */
 
 
-/* PROFIL DES SUJETS */
+/* ========================================================= */
+/* - 1. PPROFIL DANS LES SUJETS ---------------------------- */
+
 /* Header des postes par profil */
 .top-msg .user_field {display: none;}
 .top-msg .field-citation,
