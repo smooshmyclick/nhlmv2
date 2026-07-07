@@ -2258,8 +2258,8 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   width: fit-content;
   border-radius: var(--r4);
   padding: 4px 8px 6px 5px;
-  background: var(--ab);
-
+  background: var(--card);
+  border: 1px solid var(--ab);
 }
 .hub-carousel-count strong { 
   color: var(--t0);
