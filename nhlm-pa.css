@@ -1689,6 +1689,7 @@ details[open] > .nav-accordion-head .nav-accordion-arrow {
     background: var(--card);
     padding: 0 8px;
     border-bottom: 0;
+    border-radius: 0 0 0 var(--r7);
   }
 .btn-act {
     background: none;
@@ -1713,15 +1714,12 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   font-size: 11px;
   color: var(--t1);
   padding: 20px;
+    padding-bottom: 20px;
   padding-bottom: 0;
   align-items: stretch;
-  background: var(--card2);
-  border-radius: var(--r7);
-  margin: 0 20px;
-  background-image: url("https://i.imgur.com/mv0m6nn.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: var(--card);
+  border-radius: 0 0 var(--r7) var(--r7);
+  margin: 0 20px 0 120px;
 }
 
 .hub_title  { display: none; }
