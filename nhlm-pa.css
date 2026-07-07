@@ -1893,6 +1893,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   padding: 5px;
   border-radius: var(--r2);
   justify-content: center;
+  margin: 12px 0;
 }
 .hub-cst .cs {
   padding: 0 8px;
