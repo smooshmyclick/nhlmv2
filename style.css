@@ -1282,11 +1282,11 @@
   padding: 14px 20px;
   border-left: 1px solid var(--line);
   border-top: 1px solid var(--line);
+  justify-content: center;
 }
 .cate-c5 .forum-img      { display: none; }
 .cate-c5 .forum_lastpost { 
-  flex: 1; 
-  width: auto;
+  width: 250px;
   font-size: 12px;
   color: var(--tt);
   line-height: 1.5;
