@@ -233,9 +233,9 @@
 
 .ps-champs {
   position: absolute;
-  top: 300px;
+  top: 138px;
   right: -105px;
-  width: 250px;
+  width: 240px;
   padding: 12px;
   background: var(--card2);
   border-radius: var(--r6);
@@ -243,3 +243,37 @@
   border: 1px solid var(--gcolor);
   box-shadow: 0 4px 10px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.06);
 }
+
+.ps-spoiler .post_contact {
+  background: var(--card3);
+  border-radius: var(--r7);
+  padding: 8px;
+  width: fit-content;
+  margin-bottom: -25px;
+  margin-left: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+.ps-champs .field_label {
+    font-family: var(--fm);
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.ps-champs .field_content {
+    font-family: var(--ff);
+    font-size: 12px;
+    color: var(--t1);
+}
+
+.ps-champs .field-age,
+.ps-champs .field-couleur-de-dialogue,
+.ps-champs .field-messages,
+.ps-champs .field-date-d-inscription {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+.ps-champs .field-date-d-inscription { border-bottom: none }
