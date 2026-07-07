@@ -1936,10 +1936,6 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 
 /* Liste avatars */
 .onlineUsers-list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
   background: var(--surface);
   padding: 14px;
   flex: 1;
@@ -1956,6 +1952,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   align-items: center;
   gap: 5px;
   cursor: pointer;
+  margin-bottom: 12px;
 }
 .onlineUsers-list .user-avatar {
   width: 15px;
