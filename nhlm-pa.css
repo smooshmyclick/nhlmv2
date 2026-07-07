@@ -2263,7 +2263,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   border: 1px solid var(--ab);
 }
 .hub-carousel-count strong { 
-  color: var(--t0);
+  color: var(--t3);
   font-size: 11px;
   background: var(--a);
   padding: 3px 6px;
