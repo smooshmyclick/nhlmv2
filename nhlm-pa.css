@@ -2191,7 +2191,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   justify-content: center;
   align-items: center;
   gap: 4px; }
-.hub-fst .fs strong { font-weight: 400; font-size: 10px; }
+.hub-fst .fs strong { font-weight: 400; font-size: 36px; font-family: var(--fn); }
 .hub-fst .fs span {
   font-size: 10px;
   text-transform: uppercase;
