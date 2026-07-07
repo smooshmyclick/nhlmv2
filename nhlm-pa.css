@@ -1930,7 +1930,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   border-bottom: 1px solid var(--line2);
   gap: 10px;
   flex-shrink: 0;
-  background: var(--card);
+  background: var(--ab);
   font-family: var(--ff);
 }
 
@@ -2034,7 +2034,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 }
 .hub_lastConnected .lastConnected-text {
   display: block;
-  padding: 4px 10px;
+  padding: 3px 10px;
   border-bottom: 1px solid var(--line2);
   font-family: var(--ff);
   font-size: 9px;
@@ -2043,6 +2043,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   letter-spacing: .22em;
   flex-shrink: 0;
   line-height: 21px;
+  background: var(--surface);
 }
 .hub_lastConnected .lastConnected-text::before {
   content: '//';
