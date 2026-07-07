@@ -2201,9 +2201,8 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   letter-spacing: .14em;
   color: var(--t2);
 }
-.hub-fst > .fs:last-child strong {
-    margin-left: auto;
-}
+.hub-fst > .fs:last-child strong { margin-left: auto; }
+.hub-fst > .fs:last-child span { margin-left: auto; }
 
 /* Carrousel factions */
 .hub_groups {
