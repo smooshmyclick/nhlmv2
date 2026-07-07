@@ -1837,7 +1837,7 @@
   background: var(--card);
   min-height: 140px;
 }
-.cate-c6 .forum.row.cat_new {
+.cate-c6 .forum_new {
   box-shadow: 0 0 0 1px var(--ad), inset 0 0 30px var(--ag);
   border: 2px solid var(--a);
 }
