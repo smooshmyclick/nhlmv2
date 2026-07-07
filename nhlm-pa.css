@@ -2184,18 +2184,21 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   align-items: center;
   width: 100%;
   font-family: var(--ff);
-  color: var(--tt);
+  color: var(--a);
+  margin: 12px 0;
+  background: var(--surface);
+  padding: 8px 18px;
 }
 .hub-fst .fs { 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px; }
-.hub-fst .fs strong { font-weight: 400; font-size: 36px; font-family: var(--fn); }
+   display: flex;
+  flex-direction: column;
+}
+.hub-fst .fs strong { font-weight: 400; font-size: 18px; font-family: var(--fn); }
 .hub-fst .fs span {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: .14em;
+  color: var(--t2);
 }
 
 /* Carrousel factions */
@@ -2317,35 +2320,6 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 }
 .hub_groups .group:hover .hub-grp-ico img,
 .hub_groups .group.active .hub-grp-ico img { filter: brightness(.95) saturate(.8); }
-
-
-/* Mobile */
-@media (max-width: 768px) {
-  .hub {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  .hub_infos    { grid-column: 1; grid-row: auto; padding: 20px 16px 48px; }
-  .hub_onlineUsers { grid-column: 1; grid-row: auto; }
-  .hub-right    { grid-column: 1; grid-row: auto; align-self: stretch; }
-  .hub_groups   { grid-column: 1; grid-row: auto; }
-
-  .hub-row {
-    flex-direction: column;
-  }
-
-  .hub_lastConnected {
-    flex: none;
-    min-height: 160px;
-  }
-
-  .hub-s:has(.onlineUsers-list) {
-    min-height: 120px;
-  }
-
-  .hub-fst .fs strong { font-size: 22px; }
-}
 
 /* Réseau + crédits */
 .ft-rs {
