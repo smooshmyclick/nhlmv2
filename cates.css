@@ -1,3 +1,29 @@
+/* ========================================= SOMMAIRE ====== */
+/* - 1. DIVERS --------------------------------------------- */
+/* - 1. CATE GENESE ET LORE -------------------------------- */
+/* - 2. CATE ACCUEIL --------------------------------------- */
+/* - 3. CATE 3 : URBAN AERA (RP) --------------------------- */
+/* - 4. CATE 5 : RURAL AERA (RP) --------------------------- */
+/* - 5. CATE 1 : SECTION REGLEMENTAIRE --------------------- */
+/* - 6. CATE 2 : TABLEAU DE BORD --------------------------- */
+/* - 7. CATE 6 : HOLO CHAT --------------------------------- */
+/* ========================================================= */
+
+/* ========================================================= */
+
+/* - 1. DIVERS --------------------------------------------- */
+/* Forum maquée : Lore */
+.cate-f2 { display: none; }
+
+/* --- TAG DES FORUMS --- */
+.forum[data-forumid="/f11-le-joyau"] .forum-tag::before { content: "Centre ville Corpo"; }
+.forum[data-forumid="/f12-isan"] .forum-tag::before { content: "Mode & Cybernétique"; }
+.forum[data-forumid="/f13-libertad"] .forum-tag::before { content: "Quartier résidentiel"; }
+.forum[data-forumid="/f14-middletown"] .forum-tag::before { content: "Coeur industriel"; }
+.forum[data-forumid="/f15-zone-noire"] .forum-tag::before { content: "Plaisirs & Excès"; }
+.forum[data-forumid="/f16-la-jungle"] .forum-tag::before { content: "Quartier pauvre"; }
+
+
 /* ===== TITRE DES PAGES : GLOBAL (pages, blogs, memberlist) =========================================== */
 /* A mettre dans le css global */
 .nhlm-page {
@@ -35,7 +61,9 @@
   margin-top: 10px;
 }
 
-/* === GENESE ET LORE === */
+/* ========================================================= */
+/* - 1. CATE GENESE ET LORE -------------------------------- */
+
 .catgns-dim { padding: 20px; }
 
 .catgns-sec-head {
@@ -124,14 +152,14 @@
   transition: border-color .35s;
 }
  
-/* --- HERO — grille image / texte --- */
+/* --- HERO --- */
 .catgns-hero {
   display: grid;
   grid-template-columns: 1fr 400px;
   min-height: 420px;
 }
  
-/* ── Image gauche ── */
+/* Image gauche */
 .catgns-img {
   position: relative;
   overflow: hidden;
@@ -270,7 +298,7 @@
   transition: color .35s;
 }
  
-/* --- CARDS — barre de navigation bas --- */
+/* --- CARDS --- */
 .catgns-cards {
   display: grid;
   grid-template-columns: repeat(5, 1fr) 1.20fr 1.20fr;
@@ -356,7 +384,11 @@
   .catgns-card:nth-child(even) { border-right: none; }
 }
 
-/* === SECTION ACCUEIL (catacc) === */
+
+
+/* ========================================================= */
+/* - 2. CATE ACCUEIL --------------------------------------- */
+
 .catacc-dim {
   padding: 0 20px;
 }
@@ -438,7 +470,7 @@
 .catacc-topics-scroll::-webkit-scrollbar { width: 2px; }
 .catacc-topics-scroll::-webkit-scrollbar-thumb { background: var(--ab); border-radius: 1px; }
  
-/* ── Neutralisation du wrapper module FA ── */
+/* Neutralisation du wrapper */
 .catacc-topics-scroll .module {
   background: transparent !important;
   border: none !important;
@@ -446,10 +478,7 @@
   padding: 0 !important;
   margin: 0 !important;
 }
-/* Masquer le titre h3 du module */
 .catacc-topics-scroll .module .h3 { display: none !important; }
- 
-/* Neutraliser le marquee : on le transforme en bloc statique scrollable */
 .catacc-topics-scroll #comments_scroll_div,
 .catacc-topics-scroll .marquee {
   overflow: visible !important;
@@ -691,7 +720,6 @@
   border-top-right-radius: var(--r7);
   border-top-left-radius: var(--r7);
 }
-/* --- Predef Factions ---*/
 
 /* Boutons acces rapide ----- */
 .quick-access-wrap {
@@ -855,19 +883,9 @@
   border-color: white;
 }
 
+/* ========================================================= */
+/* - 3. CATE 3 : URBAN AERA (RP) --------------------------- */
 
-/* === PERSONNALISATION DES CATEGORIES ET FORUMS ====================== */ 
-
-/* === URBAN AREA ======= */
-/* --- TAG DES FORUMS --- */
-.forum[data-forumid="/f11-le-joyau"] .forum-tag::before { content: "Centre ville Corpo"; }
-.forum[data-forumid="/f12-isan"] .forum-tag::before { content: "Mode & Cybernétique"; }
-.forum[data-forumid="/f13-libertad"] .forum-tag::before { content: "Quartier résidentiel"; }
-.forum[data-forumid="/f14-middletown"] .forum-tag::before { content: "Coeur industriel"; }
-.forum[data-forumid="/f15-zone-noire"] .forum-tag::before { content: "Plaisirs & Excès"; }
-.forum[data-forumid="/f16-la-jungle"] .forum-tag::before { content: "Quartier pauvre"; }
-
-/* --- CATEGORIE 3 --- */
 /* Titre de la catégorie */
 .cate-c3 .cate_header-icon {background-image: url('https://2img.net/i.imgur.com/pO8LCgF.png');filter: brightness(0.75);}
 .cate-c3 .cate_header-btn::before { content: "Carte de Triomphe"; }
@@ -940,7 +958,7 @@
   z-index: 2;
 }
 
-/* OVERLAY STATS + TAG*/
+/* OVERLAY STATS + TAG */
 .cate-c3 .forum-cover-overlay {
   position: absolute;
   bottom: 10px;
@@ -1101,11 +1119,12 @@
   display: none;
 }
 
-/* === CATEGORIE 5 : URBAN AREA ============= */
+/* ========================================================= */
+/* - 4. CATE 5 : RURAL AERA (RP) --------------------------- */
+
 .cate-c5 .cate_header-icon { background-image: url('https://2img.net/i.imgur.com/QpbYQlb.png'); }
 .cate-c5 .cate_header-btn::before   { content: "Carte de Jericho"; }
 .cate-c5 .cate_header-label::before { content: "Extérieur de la HERSE"; }
-
 
 /* GRID PRINCIPALE */
 .cate-c5 .forums { gap:14px }
@@ -1121,14 +1140,12 @@
   border: 2px solid var(--a);
 }
 
-
 /* COLONNE GAUCHE */
 .cate-c5 .forum-cover,
 .cate-c5 a.forumtitle {
   grid-column: 1;
   grid-row: 1 / 3;
 }
-
 
 .cate-c5 .forum-cover {
   position: relative;
@@ -1144,7 +1161,6 @@
   filter: brightness(0.75);
 }
 .cate-c5 .forum-cover br { display: none; }
-
 
 /* Gradient droite */
 .cate-c5 .forum-cover::after {
@@ -1167,7 +1183,6 @@
   z-index: 1;
   clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 25%);
 }
-
 
 /* Overlay stats + tag */
 .cate-c5 .forum-cover-overlay {
@@ -1200,7 +1215,6 @@
   color: var(--t3);
 }
 
-
 /* TITRE */
 .cate-c5 a.forumtitle {
   align-self: start;
@@ -1215,12 +1229,10 @@
 }
 .cate-c5 a.forumtitle:hover { color: var(--a) !important; background: none; }
 
-
 /* COLONNE DROITE */
 .cate-c5 .forum-desc-text { grid-column: 2;     grid-row: 1; }
 .cate-c5 .forum_details   { grid-column: 3;     grid-row: 1; }
 .cate-c5 .forum_content   { grid-column: 2 / 4; grid-row: 2; }
-
 
 /* DESCRIPTION */
 .cate-c5 .forum-desc-text {
@@ -1237,7 +1249,6 @@
 }
 .cate-c5 .forum-desc-text img,
 .cate-c5 .forum-desc-text br { display: none; }
-
 
 /* SOUS-FORUMS */
 .cate-c5 .forum_details {
@@ -1271,7 +1282,6 @@
   flex-shrink: 0;
 }
 
-
 /* LASTPOST */
 .cate-c5 .forum_content {
   display: flex;
@@ -1295,7 +1305,6 @@
 }
 .cate-c5 .forum_avatar   { outline: 3px solid var(--faction-color, var(--ag)); }
 .cate-c5 .forum_lastpost .lastpost_link:hover { color: var(--t0); }
-
 
 /* TAGS PAR FORUM */
 .cate-c5 .forum-tag {
@@ -1321,7 +1330,8 @@
 .cate-c5 .forum[data-forumid="/f19-territoires-d-erebos"] .forum-tag::before { content: "Zone Hostile"; }
 
 
-/* === CATEGORIE C1 : ADMINISTRATION ========= */
+/* ========================================================= */
+/* - 5. CATE 1 : SECTION REGLEMENTAIRE --------------------- */
 
 /* En-tête catégorie */
 .cate-c1 .cate_header-btn   { display: none; }
@@ -1618,7 +1628,9 @@
 }
 .cate-c1 .forum_lastpost .lastpost_link:hover { color: var(--a); background: none; }
 
-/* ===== CATÉGORIE C2 — TABLEAU DE BORD ===== */
+/* ========================================================= */
+/* - 6. CATE 2 : TABLEAU DE BORD --------------------------- */
+
 .cate-c2 .forum-img,
 .cate-c2 .forum-desc-text, 
 .cate-c2 .forum-tag,
@@ -1803,8 +1815,9 @@
   flex-shrink: 0;
 }
 
-/* === CATÉGORIE C6 : HOLO-CHAT ===================== */
-/* HoloChat Categorie */
+/* ========================================================= */
+/* - 7. CATE 6 : HOLO CHAT --------------------------------- */
+
 /* --- EN-TÊTE CATÉGORIE --- */
 .cate-c6 .cate_header-btn,
 .cate-c6 .forum_stats {
@@ -1840,8 +1853,6 @@
   box-shadow: 0 0 0 1px var(--ad), inset 0 0 30px var(--ag);
   border: 2px solid var(--a);
 }
-
-
 
 .cate-c6 .forum-img { display: none; }
 
@@ -2096,7 +2107,10 @@
 /* --- masqué --- */
 .cate-c6 .forum_details { display: none; }
 
-/* === CATEGORIE C4 : DISCUSSION HRP ========= */
+
+/* ========================================================= */
+/* - 8. CATE 6 : DISCUSSION (HRP) -------------------------- */
+
 .container.cate-c4 {
   margin-bottom: 0;
   padding-bottom: 0;
