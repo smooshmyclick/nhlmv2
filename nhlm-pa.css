@@ -1738,6 +1738,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   overflow: visible;
   background: transparent;
   border: none;
+  margin-left: -150px;
 }
 
 .hub_lastUser {
@@ -1821,7 +1822,6 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   display: block;
   font-family: var(--ff);
   font-size: 12px;
-  color: var(--a);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: .04em;
