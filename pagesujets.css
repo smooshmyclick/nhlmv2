@@ -29,7 +29,7 @@
   margin-bottom: 10px;
   margin-top: 20px;
   margin-left: 310px;
-  background: var(--cat1-bg);
+  border: 6px solid var(--surface);
 }
 
 .top-msg > .user_field {
