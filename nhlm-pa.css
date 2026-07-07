@@ -1707,15 +1707,13 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 
 .hub {
   display: grid;
-  grid-template-columns: 200px 1fr 280px;
+  grid-template-columns: 120px 1fr 280px;
   grid-template-rows: auto 1fr auto;
   gap: 8px;
   font-family: var(--fm);
   font-size: 11px;
   color: var(--t1);
-  padding: 20px;
-    padding-bottom: 20px;
-  padding-bottom: 0;
+  padding: 0 20px;
   align-items: stretch;
   background: var(--card);
   border-radius: 0 0 var(--r7) var(--r7);
@@ -1738,7 +1736,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   overflow: visible;
   background: transparent;
   border: none;
-  margin-left: -150px;
+  margin-left: -95px;
 }
 
 .hub_lastUser {
@@ -1889,11 +1887,15 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 }
 
 /* Stats activité */
-.hub-cst { display: flex; gap: 5px; }
-.hub-cst .cs {
-  flex: 1;
+.hub-cst { 
+  display: flex;
   background: var(--surface);
-  padding: 8px 16px;
+  padding: 5px;
+  border-radius: var(--r2);
+  justify-content: center;
+}
+.hub-cst .cs {
+  padding: 0 8px;
   display: flex;
   align-items: center;
   gap: 5px;
