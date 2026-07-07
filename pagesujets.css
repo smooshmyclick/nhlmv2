@@ -45,19 +45,19 @@
   grid-row: 2;
   grid-column: 1;
   z-index: 1;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   overflow: hidden;
   border-radius: 50%;
-  margin: auto 20px;
-  border: 6px solid var(--deep);
+  margin: auto 10px;
+  border: 6px solid var(--card2);
 }
 
 .top-msg .field-citation {
   grid-row: 2;
   grid-column: 2 / 8;
   z-index: 1;
-  margin: auto 30px;
+  margin: auto 20px auto 5px;
   font-style: italic;
   color: var(--t1);
   font-family: var(--fsr);
