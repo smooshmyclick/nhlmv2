@@ -1,6 +1,5 @@
-
-
 /* ===== TITRE DES PAGES : GLOBAL (pages, blogs, memberlist) =========================================== */
+/* A mettre dans le css global */
 .nhlm-page {
   position: relative;
   border-bottom: 1px solid var(--line);
