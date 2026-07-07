@@ -2271,9 +2271,12 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
 
 /* Boutons factions */
 .hub-carousel-btns {
-  display: flex;
   flex-shrink: 0;
   margin-left: auto;
+  margin-right: 5px;
+  margin-bottom: -130px;
+  margin-top: 28px;
+  z-index: 200;
 }
 .hub_groups .group {
   display: flex;
