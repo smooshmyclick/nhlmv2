@@ -1690,7 +1690,7 @@
 }
 .cate-c2 .forumtitle:hover { color: var(--a); background: none; }
 
-.cate-c2 .forum_avatar {
+.cate-c2  .forum_avatar.lastpostavatar {
   position: absolute;
   top: -32px;
   left: 50%;
