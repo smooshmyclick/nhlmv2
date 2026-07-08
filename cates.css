@@ -1059,6 +1059,10 @@
   letter-spacing: .04em;
   color: var(--t1);
   flex-shrink: 0;
+  background: none;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
 }
 .cate-c3 a.forumtitle:hover { color: var(--a); background: none; }
 
@@ -1423,6 +1427,8 @@
   font-family: var(--ff);
   font-size: 24px;
   color: var(--t1);
+  background: none;
+  border: none;
 }
 .cate-c1 .forumtitle:hover { color: var(--t0); background: none; }
 
@@ -1696,6 +1702,8 @@
   letter-spacing: .05em;
   padding: 0 18px;
   order: 2;
+  background: none;
+  border: none;
 }
 .cate-c2 .forumtitle:hover { color: var(--a); background: none; }
 
@@ -1863,6 +1871,7 @@
   background: var(--card);
   min-height: 140px;
   display: block;
+  padding: 0;
 }
 .cate-c6 .forum_new {
   box-shadow: 0 0 0 1px var(--ad), inset 0 0 30px var(--ag);
@@ -1883,6 +1892,8 @@
   text-transform: uppercase;
   color: var(--t1);
   text-decoration: none;
+  border: none;
+  background: none;
 }
 .cate-c6 a.forumtitle:hover { color: var(--t0); background: none; }
 .cate-c6 a.forumtitle::after { display: none; }
