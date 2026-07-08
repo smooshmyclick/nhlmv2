@@ -910,6 +910,7 @@
   flex-direction: column;
   background: var(--card);
   border-radius: var(--r8);
+  padding: 0;
 }
 /* Nouveau message */
 .cate-c3 .forum.cat_new {
@@ -1136,6 +1137,7 @@
   grid-template-columns: 55% 1fr 180px;
   grid-template-rows: 1fr auto;
   height: 254px;
+  padding: 0;
 }
 /* Nouveau message */
 .cate-c5 .forum.cat_new {
@@ -1298,6 +1300,7 @@
   background: none;
   border-radius: unset;
   border-right: none;
+  border-bottom: none;
 }
 .cate-c5 .forum-img      { display: none; }
 .cate-c5 .forum_lastpost { 
