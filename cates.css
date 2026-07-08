@@ -1013,6 +1013,9 @@
   order: 6;
   margin: 4px 14px;
   transform: rotate(-2deg);
+  width: unset;
+  background: none;
+  border: none;
 }
 .cate-c3 .forum-img { display: none; }
 
@@ -1292,6 +1295,9 @@
   border-left: 1px solid var(--line);
   border-top: 1px solid var(--line);
   justify-content: center;
+  background: none;
+  border-radius: unset;
+  border-right: none;
 }
 .cate-c5 .forum-img      { display: none; }
 .cate-c5 .forum_lastpost { 
@@ -1722,6 +1728,7 @@
   padding-top: 40px;
   background-color: var(--deep);
   background-size: 60px 52px;
+  width: unset;
 }
 .cate-c2 .forum_content:hover { background-color: var(--ag); }
 
