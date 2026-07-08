@@ -1996,6 +1996,9 @@
   row-gap: 10px;
   column-gap: 12px;
   align-items: flex-end;
+  background: none;
+  border: none;
+  width: unset;
 }
 .cate-c6 .forum.row:first-child .forum_content::before {
   content: "✉ Vous avez reçu un nouveau message";
