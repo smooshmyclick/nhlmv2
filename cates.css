@@ -1761,6 +1761,7 @@
 }
 
 .cate-c2 .forum-cover {
+  position: unset;
   display: block;
   background: none;
   height: auto;
