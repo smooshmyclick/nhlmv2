@@ -2428,7 +2428,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   display: flex;
   align-items: stretch;
   justify-content: center;
-  margin: 45px 80px 0 80px;
+  margin: 100px 80px 0 80px;
   border-radius: var(--r7);
 }
 .prt-cc {
