@@ -967,8 +967,8 @@
   right: 14px;
   z-index: 3;
   display: flex;
-  align-items: center;
   gap: 8px;
+  justify-content: start;
 }
 
 .cate-c3 .forum-stats-overlay {
@@ -1201,7 +1201,6 @@
   left: auto;
   z-index: 3;
   display: flex;
-  align-items: center;
   gap: 8px;
 }
 .cate-c5 .forum-stats-overlay {
@@ -1518,7 +1517,7 @@
 .cate-c1 .forum-cover br    { display: none; }
 .cate-c1 .forum-tag          { display: none; }
 
-.cate-c1 .forum-cover-overlay { display: flex; padding: 14px 38px; }
+.cate-c1 .forum-cover-overlay { display: flex; padding: 14px 38px; justify-content: unset; }
 .cate-c1 .forum-stats-overlay {
   display: flex;
   flex-direction: row;
@@ -1788,6 +1787,9 @@
 .cate-c2 .forum-cover-overlay {
   border-top: 1px solid var(--line);
   padding-top: 8px;
+  position: unset;
+  display: block;
+  padding-bottom: 0;
 }
 
 .cate-c2 .forum-stats-overlay {
