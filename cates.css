@@ -1941,6 +1941,7 @@
   color: var(--t1);
 }
 .cate-c6 .forum-desc-text {
+  display: block;
   position: absolute;
   top: 70px;
   left: 20px;
