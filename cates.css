@@ -1931,6 +1931,7 @@
 
 /* --- TEXTE DE DESCRIPTION --- */
 .cate-c6 .forum-cover {
+  position: unset;
   font-size: 0;
   line-height: 0;
   padding: 0;
