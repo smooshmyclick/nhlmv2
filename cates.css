@@ -1937,7 +1937,7 @@
 .cate-c6 .forum-stats-overlay span {
   font-size: 10px;
 }
-.cate-c6 .forum-stats-overlay:first-of-type {
+.cate-c6 > .forum-cover-overlay:first-child .forum-stats-overlay {
   color: var(--t1);
 }
 .cate-c6 .forum-desc-text {
