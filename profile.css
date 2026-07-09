@@ -733,9 +733,10 @@
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 15px;
-  background: var(--deep);
   padding: 12px;
   border-radius: var(--r6);
+  background: var(--card2);
+  border: 1px solid var(--ag);
 }
  
 .skills_arsenal img {
