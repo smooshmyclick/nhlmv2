@@ -12,7 +12,7 @@
 /* ========================================================= */
 /* - 0. ELEMENTS MASQUES ----------------------------------- */
 [data-champ*="Fiche personnage"] label,
-[data-champ="Chronologie"] label,
+[data-champ="Fiche Chronologie"] label,
 [data-champ="Fiche de liens"] label, 
 [data-champ="Fiche PNJ"] label, 
 [data-champ="Registre personnel"] label,
@@ -159,7 +159,7 @@
   mask-image: url("https://api.iconify.design/pixelarticons/avatar-circle.svg");
   -webkit-mask-image: url("https://api.iconify.design/pixelarticons/avatar-circle.svg");
 }
-.fiche_btn[data-zone="Chronologie"] .profile_field::before {
+.fiche_btn[data-zone="Fiche Chronologie"] .profile_field::before {
   mask-image: url("https://api.iconify.design/pixelarticons/calendar.svg");
   -webkit-mask-image: url("https://api.iconify.design/pixelarticons/calendar.svg");
 }
