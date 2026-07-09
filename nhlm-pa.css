@@ -1902,15 +1902,6 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   gap: 5px;
   transition: background .15s;
   cursor: default;
-
-  border-radius: var(--r2);
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    12px 100%,
-    0 calc(100% - 12px)
-  );
 }
 .hub-cst .cs strong { line-height: 1;font-size: 7.5px;letter-spacing: .12em;color: var(--t2); font-weight: 200; }
 .hub-cst .cs span   { font-size: 7.5px; text-transform: uppercase; letter-spacing: .12em; color: var(--t2); }
