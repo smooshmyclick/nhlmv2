@@ -980,9 +980,10 @@
   width: 8px;
   height: 8px;
   background: var(--gcolor);
-  border-radius: 50%;
   left: -4px;
   top: 15px;
+  transform: rotate(45deg);
+  border-radius: 2px;
 }
 
 /* Trait vertical */
