@@ -349,7 +349,18 @@ blockquote .holo-msg .holo-msg-avatar {
   justify-content: flex-end;
   margin-top: 2px;
 }
-
+/* holochat to add */
+.holo-form-actions::before {
+  content: "Pour poster un holochat dans un RP classique, utilisez la balise : [holoframe]votre code généré[/holoframe].";
+  display: block;
+  font-weight: 200;
+  color: var(--t2);
+  font-family: var(--fm);
+  font-size: 10px;
+  align-content: center;
+  text-align: left;
+  margin-right: 191px;
+}
 #holo-generate {
   display: flex;
   align-items: center;
