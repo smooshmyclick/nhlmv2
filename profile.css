@@ -4,6 +4,7 @@
 /* - 2. ZONE CENTRALE -------------------------------------- */
 /* - 3. ZONE AVATAR MEMBRE --------------------------------- */
 /* - 4. COMPETENCES ET ARSENAL ----------------------------- */
+/* - 5. RELATIONS ET CHRONOLOGIE --------------------------- */
 /* ========================================================= */
 /* Template : profile_view_body */
 
@@ -819,3 +820,183 @@
  gap: 2px;
 }
 .overheat_images img { }
+
+/* ========================================================= */
+/* - 5. RELATIONS ET CHRONOLOGIE --------------------------- */
+/* Zone image bonus + comp et arsenal */
+.comp_card{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 20px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Image Bonus */
+.profile_field[data-champ="Image bonus"] > label > span { color: var(--deep); }
+
+.profile_field[data-champ="Image bonus"] { height: 100%; }
+.img_bonus .field_uneditable { height: 100%; }
+
+.img_bonus {
+  overflow:hidden;
+  margin-top: -15px;
+  border-radius: var(--r6);
+  border-bottom: 3px solid color-mix(in srgb, var(--gcolor), transparent 80%);
+}
+
+.img_bonus img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  border-radius: var(--r6);
+  border: 3px solid color-mix(in srgb, var(--gcolor), transparent 80%);
+}
+
+/* Liens et Chrono */
+.rpinfo_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.profile_liens,
+.profile_chrono {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: var(--card);
+  border-radius: var(--r6);
+  padding: 25px;
+  margin: 0 auto 15px auto;
+}
+
+.profile_liens::before,
+.profile_chrono::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 82%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 25px;
+  background: var(--gcolor);
+  z-index: 1;
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%);
+}
+
+
+.liens_title,
+.chrono_title {
+  color: var(--t1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: var(--ff);
+}
+
+.profile_field[data-champ="Liens"],
+.profile_field[data-champ="Chronologie"]{
+  max-height: 380px;
+  overflow-y: auto;
+  height: 380px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--card2) transparent;
+  padding-right: 10px;
+}
+
+.prf_lien[data-zone="Liens"] .profile_field label span { color: var(--card); }
+.prf_chrono[data-zone="Chronologie"] .profile_field label span { color: var(--card); }
+
+/* Liens/Relations */
+[data-zone="Liens"] u {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: .35rem 1rem;
+  align-items: start;
+  border-radius: var(--r6);
+  padding: 2px 12px;
+  background: var(--card2);
+  border: 1px solid var(--ad);
+  text-decoration: none;
+}
+[data-zone="Liens"] u:hover { border: 1px solid var(--ab); }
+
+.prf_lien[data-zone="Liens"] img { grid-row: 1 / span 3; width: 60px; height: 60px; border-radius: var(--r6); margin: 8px auto; border: 1px solid var(--line2);}
+.prf_lien[data-zone="Liens"] h2 { grid-column: 2; font-family: var(--ff);font-size: 12px;margin: 10px 0 0 0;color: var(--t1); }
+.prf_lien[data-zone="Liens"] h3 { grid-column: 2; margin: 0;;font-family: var(--ff);font-size: 12px;font-weight: 400;background: var(--card);padding: 3px 10px;border-radius: var(--r4);width: fit-content;}
+.prf_lien[data-zone="Liens"] h3::before {content: '•';font-size: 12px;color: var(--gcolor);margin-right: 7px;}
+.prf_lien[data-zone="Liens"] h4 { grid-column: 2; margin-top: 0;font-weight: 400;font-size: 13px;}
+
+/* Chronologie */
+[data-zone="Chronologie"] u {
+  display: flex;
+  background: var(--neutralDark);
+  text-decoration: none;
+}
+
+/* Sous-titre */
+.prf_chrono[data-zone="Chronologie"] u:first-of-type { 
+  border-radius: 10px 10px 0 0; 
+}
+
+/* Bordures top & bottom de la zone */
+.prf_chrono[data-zone="Chronologie"] u:last-of-type { 
+  border-radius: 0 0 10px 10px; 
+}
+
+/* Date */
+.prf_chrono[data-zone="Chronologie"] h2 {
+  margin: 13px 20px;
+  flex-shrink: 0;
+  font-family: var(--ff);
+  color: var(--gcolor);
+  width: 50px;
+}
+
+.prf_chrono[data-zone="Chronologie"] div {
+  flex: 1;
+}
+
+/* Description */
+.prf_chrono[data-zone="Chronologie"] h4 {
+  position: relative;
+  margin: 0;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* Point de chronologie */
+.prf_chrono[data-zone="Chronologie"] h4::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--gcolor);
+  border-radius: 50%;
+  left: -4px;
+  top: 15px;
+}
+
+/* Trait vertical */
+.prf_chrono[data-zone="Chronologie"] h4::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: var(--gcolor);
+}
+
+/* Premier élément */
+.prf_chrono[data-zone="Chronologie"] u:first-of-type h4::after {
+  margin-top: 15px;
+}
