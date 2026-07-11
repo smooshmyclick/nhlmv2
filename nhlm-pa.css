@@ -2275,16 +2275,12 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6px 8px;
   cursor: pointer;
   position: relative;
-  overflow: hidden;
   text-decoration: none;
   transition: background .2s;
-  margin: 4px;
   border-radius: var(--r6);
-  border: 1px solid var(--line);
-  background: var(--line);
+  margin: 10px 0;
 }
 
 /* Fond coloré hover/actif */
@@ -2295,9 +2291,9 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   transition: opacity .2s;
   background: transparent;
 }
-.hub_groups .group.triomphe::before { background: rgba(18,152,176,.12); }
-.hub_groups .group.erebos::before   { background: rgba(139,62,245,.12); }
-.hub_groups .group.irreel::before   { background: rgba(194,34,34,.12); }
+.hub_groups .group.triomphe::before { background: rgba(18,152,176,.12); border-radius: var(--r6); }
+.hub_groups .group.erebos::before   { background: rgba(139,62,245,.12); border-radius: var(--r6); }
+.hub_groups .group.irreel::before   { background: rgba(194,34,34,.12); border-radius: var(--r6); }
 .hub_groups .group:hover::before,
 .hub_groups .group.active::before   { opacity: 1; }
 
@@ -2316,6 +2312,7 @@ a.btn-act:hover {color:var(--a);border-color:var(--a);}
   display: block;
   filter: brightness(.7) saturate(.5);
   transition: filter .2s;
+  padding: 5px;
 }
 .hub_groups .group:hover .hub-grp-ico img,
 .hub_groups .group.active .hub-grp-ico img { filter: brightness(.95) saturate(.8); }
