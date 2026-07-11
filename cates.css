@@ -962,13 +962,11 @@
 /* OVERLAY STATS + TAG */
 .cate-c3 .forum-cover-overlay {
   position: absolute;
-  bottom: 10px;
-  left: 14px;
-  right: 14px;
   z-index: 3;
   display: flex;
   gap: 8px;
   justify-content: start;
+  padding: 10px 15px;
 }
 
 .cate-c3 .forum-stats-overlay {
@@ -1196,12 +1194,11 @@
 /* Overlay stats + tag */
 .cate-c5 .forum-cover-overlay {
   position: absolute;
-  bottom: 10px;
-  right: 14px;
   left: auto;
   z-index: 3;
   display: flex;
   gap: 8px;
+  padding: 10px 15px;
 }
 .cate-c5 .forum-stats-overlay {
   display: flex;
