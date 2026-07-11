@@ -764,6 +764,28 @@ button[onglet].active::before { background: var(--a); }
 /* ========================================================= */
 /* - 5. CODES MISE EN FORME GUIDEBOOK ---------------------- */
 
+/* Root du Guidebook */
+:root {
+  --red1: #e05050;
+  --red2: rgba(224,80,80,.12);
+  --red3: rgba(224,80,80,.2);
+
+  --triomphe: #1298b0;
+  --triomphe-d: rgba(18,152,176,.18);
+  --triomphe-g: rgba(18,152,176,.06);
+  --triomphe-b: rgba(18,152,176,.28);
+
+  --erebos: #8b3ef5;
+  --erebos-d: rgba(139,62,245,.18);
+  --erebos-g: rgba(139,62,245,.06);
+  --erebos-b: rgba(139,62,245,.28);
+
+  --irreel: #C22222;
+  --irreel-d: rgba(194,34,34,.18);
+  --irreel-g: rgba(194,34,34,.05);
+  --irreel-b: rgba(194,34,34,.22);
+}
+  
 /* TITRES */
 .tx-h1{font-family:var(--ff);font-size:clamp(18px,1vw,28px);line-height:1;letter-spacing:-.02em;text-transform:uppercase;color:var(--t0);margin-bottom:16px;}
 .tx-h2{font-family:var(--ff);font-size:clamp(10px,0.9vw,18px);line-height:1.1;letter-spacing:-.01em;text-transform:uppercase;color:var(--t0);display:flex;align-items:center;gap:14px;}
