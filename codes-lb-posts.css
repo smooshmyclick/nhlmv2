@@ -788,7 +788,7 @@ button[onglet].active::before { background: var(--a); }
 
 /* LISTES */
 .tx-ul{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-direction:column;gap:5px;}
-.tx-ul li{padding-left:18px;position:relative;font-family:var(--ft);font-size:14px;line-height:1.75;color:var(--t1);}
+.tx-ul li{padding-left:18px;position:relative}
 .tx-ul li::before{content:'›';position:absolute;left:0;top:0;color:var(--a);font-weight:700;}
 .tx-ul .tx-ul{margin:4px 0 4px 10px;}
 .tx-ul .tx-ul li::before{content:'—';color:var(--t3);font-size:11px;top:2px;}
