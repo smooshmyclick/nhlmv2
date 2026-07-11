@@ -772,7 +772,7 @@ button[onglet].active::before { background: var(--a); }
 .tx-h4{font-family:var(--fm);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--a);margin:20px 0 8px;}
 
 /* TEXTE */
-.tx-p{font-family:var(--ft);font-size:14px;line-height:1.35;margin-bottom:16px;}
+.tx-p{font-family:var(--ft);font-size:14px;margin-bottom:16px;}
 .tx-lore{font-family:var(--fsr);font-style:italic;font-size:14px;line-height:1.35;color:rgba(214,210,203,.8);margin-bottom:16px;}
 .tx-small{font-family:var(--fm);font-size:11px;line-height:1.35;color:var(--t2);margin-bottom:10px;}
 .tx-b{font-weight:700;}
