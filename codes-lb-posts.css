@@ -3,8 +3,9 @@
 /* - 2. CODES MISE EN FORME -------------------------------- */
 /* - 3. EDITEUR DE POSTS ----------------------------------- */
 /* - 4. BALISES BBCODE SPECIALES --------------------------- */
-/* - 5. ANNEXE & SUJETS A ONGLETS --------------------------- */
+/* - 5. ANNEXE & SUJETS A ONGLETS -------------------------- */
 /* - 5. CODES MISE EN FORME GUIDEBOOK ---------------------- */
+/* -- 5.1. CHRONOLOGIE LORE -------------------------------- */
 /* ========================================================= */
 
 /* ========================================================= */
@@ -877,7 +878,10 @@ button[onglet].active::before { background: var(--a); }
 .tx-caption::before{content:'';width:12px;height:1px;background:var(--t3);flex-shrink:0;}
 
 
-/* CHRONOLOGIE DU GUIDEBOOK */
+
+/* ========================================================= */
+/* -- 5.1. CHRONOLOGIE LORE -------------------------------- */
+
 .tm-wrap {
   --tm-line: var(--a);
   --tm-gap: 40px;
