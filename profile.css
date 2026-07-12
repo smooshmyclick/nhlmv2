@@ -935,4 +935,44 @@
 .prf_lien[data-zone="Liens"] h4 { grid-column: 2; margin-top: 0;font-weight: 400;font-size: 13px;}
 
 /* Chronologie RP */
+/* Chronologie */
+[data-zone="Chronologie"] u {
+  display: block;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: var(--r6);
+  background: var(--card2);
+}
 
+/* Titre du RP (lien) */
+.prf_chrono[data-zone="Chronologie"] h2 {
+  margin: 0 0 4px;
+  font-family: var(--ff);
+  font-size: 12px;
+  letter-spacing: .10em;
+}
+
+.prf_chrono[data-zone="Chronologie"] h2 a {
+  color: var(--gcolor);
+  text-decoration: none;
+}
+
+.prf_chrono[data-zone="Chronologie"] h2 a:hover {
+  text-decoration: underline;
+}
+
+/* Date / participants */
+.prf_chrono[data-zone="Chronologie"] h3 {
+  margin: 0 0 8px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--t2);
+  font-family: var(--fm);
+}
+
+/* Description */
+.prf_chrono[data-zone="Chronologie"] h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+}
