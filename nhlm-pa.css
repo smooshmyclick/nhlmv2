@@ -57,20 +57,57 @@
 
 /* Burger */
 .tb-burger {
-  width: 24px;
-  height: 24px;
-  background: transparent;
+  background: none;
+  border: none;
+  position: relative;
+  cursor: pointer;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  color: var(--a);
-  transition: color .12s, border-color .15s, background .15s;
-  clip-path: none;
+  gap: 5px;
+  transition-duration: .5s;
   padding: 0;
 }
-.tb-burger:hover { color: var(--ab) !important; background: transparent !important; }
-.tb-burger svg   { width: 24px; height: 24px; }
+
+.bars {
+  width: 90%;
+  height: 2px;
+  background-color: var(--a);
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: .8s;
+}
+
+/* état "sidebar ouverte" */
+.tb-burger.is-open .bars {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+.tb-burger.is-open #bar2 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+.tb-burger.is-open #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+.tb-burger.is-open #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+.tb-burger.is-open {
+  transition-duration: .5s;
+  transform: rotate(180deg);
+}
 
 /* Liens */
 .tb-action {
