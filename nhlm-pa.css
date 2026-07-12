@@ -56,7 +56,11 @@
 .tb-sep   { width: 1px; height: 20px; background: var(--line2); flex-shrink: 0; }
 
 /* Burger */
+/* Burger */
 .tb-burger {
+  width: 24px;
+  height: 24px;
+  background: transparent;
   background: none;
   border: none;
   position: relative;
@@ -65,10 +69,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  color: var(--a);
+  transition: color .12s, border-color .15s, background .15s;
+  clip-path: none;
   gap: 5px;
   transition-duration: .5s;
   padding: 0;
 }
+.tb-burger:hover { color: var(--ab) !important; background: transparent !important; }
+.tb-burger svg   { width: 24px; height: 24px; }
 
 .bars {
   width: 90%;
