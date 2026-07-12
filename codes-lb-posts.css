@@ -875,3 +875,90 @@ button[onglet].active::before { background: var(--a); }
 .tx-img-right:hover img,.tx-img-left:hover img{filter:brightness(1) saturate(1);}
 .tx-caption{font-family:var(--fm);font-size:10px;letter-spacing:.12em;color:var(--t3);text-transform:uppercase;margin-top:6px;display:flex;align-items:center;gap:8px;}
 .tx-caption::before{content:'';width:12px;height:1px;background:var(--t3);flex-shrink:0;}
+
+
+/* CHRONOLOGIE DU GUIDEBOOK */
+.tm-wrap {
+  --tm-line: var(--a);
+  --tm-gap: 40px;
+  max-width: var(--forumSize);
+  margin: 0 auto;
+  position: relative;
+}
+
+.tm-track {
+  position: relative;
+}
+
+.tm-track::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--tm-line);
+  transform: translateX(-50%);
+}
+
+.tm-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--tm-gap);
+  position: relative;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.tm-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: var(--tm-line);
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 2;
+}
+
+.tm-media img {
+  display: block;
+  object-fit: cover;
+  width: 480px;
+  height: 200px;
+  border-radius: 8px;
+  border: 1px solid var(--line2);
+  filter: brightness(.88) saturate(.8);
+}
+
+.tm-card {
+  background: var(--card);
+  border-radius: var(--r8);
+  padding: 24px 28px;
+}
+
+.tm-heading {
+  color: var(--a);
+  font-size: 14px;
+  margin: 0;
+  font-family: var(--ff);
+}
+
+.tm-year {
+  color: var(--t0);
+  font-size: 20px;
+  margin: 0 0 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line2);
+  font-family: var(--fn);
+}
+
+.tm-text { }
+
+.tm-row:nth-child(odd) .tm-media  { grid-column: 1; }
+.tm-row:nth-child(odd) .tm-card   { grid-column: 2; }
+.tm-row:nth-child(even) .tm-card  { grid-column: 1; }
+.tm-row:nth-child(even) .tm-media { grid-column: 2; }
+.tm-row:nth-child(odd) .tm-media { justify-self: end; }
+.tm-row:nth-child(even) .tm-media { justify-self: start; }
