@@ -950,10 +950,16 @@
   font-family: var(--ff);
   font-size: 12px;
   letter-spacing: .10em;
+  background: var(--gcolor);
+  padding: 4px 8px;
+  width: fit-content;
+  text-transform: unset;
+  border-radius: var(--r2);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 8px 100%, 0 calc(100% - 8px));
 }
 
 .prf_chrono[data-zone="Chronologie"] h2 a {
-  color: var(--gcolor);
+  color: var(--t3);
   text-decoration: none;
 }
 
