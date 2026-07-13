@@ -876,7 +876,7 @@ button[onglet].active::before { background: var(--a); }
 .tx-img-right:hover img,.tx-img-left:hover img{filter:brightness(1) saturate(1);}
 .tx-caption{font-family:var(--fm);font-size:10px;letter-spacing:.12em;color:var(--t3);text-transform:uppercase;margin-top:6px;display:flex;align-items:center;gap:8px;}
 .tx-caption::before{content:'';width:12px;height:1px;background:var(--t3);flex-shrink:0;}
-.img-lore { margin: -32px; }
+.img-lore { margin: -32px; height: 0; }
 .img-lore img { width: 100%;display: block;filter: brightness(.88) saturate(.8);transition: filter .3s;-webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent);mask-image: linear-gradient(to bottom, #000 70%, transparent);opacity: 0.3; }
 
 /* BOUTONS NAV DANS LES SUJETS CONTEXTE */
