@@ -178,6 +178,7 @@
   overflow-wrap: break-word;
   word-break: break-word;
   width: 230px;
+  font-size: 12px;
 }
 
 .field-faction .label,
