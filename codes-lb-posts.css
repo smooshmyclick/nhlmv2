@@ -621,7 +621,7 @@ a.sceditor-button {
 }
 
 /* --- Holo-Chat Frame --- */
-.holo-frame {position: relative;border: 1px solid var(--line2);border-radius: var(--r7);padding: 0 12px;}
+.holo-frame {position: relative;border: 1px solid var(--line2);border-radius: var(--r7);padding: 0 12px; background: var(--card2);box-shadow: 0 3px 8px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.03);}
 .holo-frame::after {
   content: '\F2D1  \F623';
   font-family: 'bootstrap-icons';
