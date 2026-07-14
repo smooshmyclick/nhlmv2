@@ -1736,6 +1736,7 @@
   background-color: var(--deep);
   background-size: 60px 52px;
   width: unset;
+  border: none;
 }
 .cate-c2 .forum_content:hover { background-color: var(--ag); }
 
