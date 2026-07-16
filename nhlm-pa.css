@@ -23,7 +23,7 @@
   gap: 14px;
   background: rgba(17,17,17,.6);
   backdrop-filter: blur(20px) saturate(1.6);
-  border-bottom: 1px solid rgba(255,255,255,.07);
+  border-bottom: 1px solid var(--ad);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -37,16 +37,6 @@
   top: 0; left: 0; right: 0;
   height: 1px;
   background: linear-gradient(to right, transparent 0%, rgba(255,255,255,.07) 30%, rgba(255,255,255,.12) 50%, rgba(255,255,255,.07) 70%, transparent);
-  pointer-events: none;
-}
-.topbar::after {
-  content: '';
-  position: absolute;
-  bottom: -1px; left: 0; right: 0;
-  height: 1px;
-  background: var(--ab);
-  opacity: .55;
-  transition: background .35s;
   pointer-events: none;
 }
 
