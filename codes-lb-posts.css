@@ -6,6 +6,7 @@
 /* - 5. ANNEXE & SUJETS A ONGLETS -------------------------- */
 /* - 5. CODES MISE EN FORME GUIDEBOOK ---------------------- */
 /* -- 5.1. CHRONOLOGIE LORE -------------------------------- */
+/* -- 5.2. AFFICHAGE SUJETS LORE --------------------------- */
 /* ========================================================= */
 
 /* ========================================================= */
@@ -998,3 +999,61 @@ flex: 1;
 .tm-row:nth-child(even) .tm-media { grid-column: 2; }
 .tm-row:nth-child(odd) .tm-media { justify-self: end; }
 .tm-row:nth-child(even) .tm-media { justify-self: start; }
+
+
+/* ========================================================= */
+/* -- 5.2. AFFICHAGE SUJETS LORE --------------------------- */
+/* Sujet "Contexte du forum" */
+.topicslist_row:has(a.topictitle[href="/t23-contexte-du-forum"]) { --cover: url("https://i.pinimg.com/control1/1200x/26/4e/8e/264e8e70878a5930f100224d2293957a.jpg"); }
+.topicslist_row:has(a.topictitle[href="/t24-chronologie-de-nihilum"]) { --cover: url("https://i.pinimg.com/control1/1200x/ec/45/c8/ec45c8f5c75441c3bb72c01247dc7ea3.jpg"); }
+.topicslist_row:has(a.topictitle[href="/t29-megacorporations-de-triomphe"]) { --cover: url("https://2img.net/i.imgur.com/PjylGI5.png"); }
+.topicslist_row:has(a.topictitle[href="/t28-guerre-des-trois-factions"]) { --cover: url("https://i.pinimg.com/1200x/c9/2e/ad/c92ead3911c7b20a23bf8eab80ba588f.jpg"); }
+
+.topicslist_row:has(a.topictitle[href="/t23-contexte-du-forum"]),
+.topicslist_row:has(a.topictitle[href="/t24-chronologie-de-nihilum"]),
+.topicslist_row:has(a.topictitle[href="/t28-guerre-des-trois-factions"]),
+.topicslist_row:has(a.topictitle[href="/t29-megacorporations-de-triomphe"]) {
+  position: relative;
+  padding-top: 200px;
+}
+
+.topicslist_row:has(a.topictitle[href="/t23-contexte-du-forum"]) .topics-right,
+.topicslist_row:has(a.topictitle[href="/t24-chronologie-de-nihilum"]) .topics-right,
+.topicslist_row:has(a.topictitle[href="/t28-guerre-des-trois-factions"]) .topics-right,
+.topicslist_row:has(a.topictitle[href="/t29-megacorporations-de-triomphe"]) .topics-right{
+  display: none;
+}
+
+.topicslist_row:has(a.topictitle[href="/t23-contexte-du-forum"])::before,
+.topicslist_row:has(a.topictitle[href="/t24-chronologie-de-nihilum"])::before,
+.topicslist_row:has(a.topictitle[href="/t28-guerre-des-trois-factions"])::before,
+.topicslist_row:has(a.topictitle[href="/t29-megacorporations-de-triomphe"])::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 200px;
+  background: center/cover var(--cover);
+  border-radius: var(--r12) var(--r12) 0 0;
+  z-index: 0;
+}
+
+.topicslist_row:has(a.topictitle[href="/t23-contexte-du-forum"])::after,
+.topicslist_row:has(a.topictitle[href="/t24-chronologie-de-nihilum"])::after,
+.topicslist_row:has(a.topictitle[href="/t28-guerre-des-trois-factions"])::after,
+.topicslist_row:has(a.topictitle[href="/t29-megacorporations-de-triomphe"])::after{
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 200px;
+  background: linear-gradient(to bottom, transparent 50%, var(--card) 100%);
+  border-bottom: 1px solid var(--line);
+  z-index: 1;
+}
+
+.topicslist_row:has(a.topictitle[href="/t23-contexte-du-forum"]) :is(.topics-left, .topics-badge),
+.topicslist_row:has(a.topictitle[href="/t24-chronologie-de-nihilum"]) :is(.topics-left, .topics-badge),
+.topicslist_row:has(a.topictitle[href="/t28-guerre-des-trois-factions"]) :is(.topics-left, .topics-badge),
+.topicslist_row:has(a.topictitle[href="/t29-megacorporations-de-triomphe"]) :is(.topics-left, .topics-badge) {
+  position: relative;
+  z-index: 2;
+}
