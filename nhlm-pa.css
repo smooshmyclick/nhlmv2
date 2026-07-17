@@ -1332,7 +1332,7 @@ left: 50%;
   cursor: pointer;
 }
 .logo-wrap:hover .logo-gem {
-  filter: drop-shadow(0 0 16px var(--ab)) drop-shadow(0 0 4px var(--a));
+  filter: drop-shadow(0 0 8px var(--ab)) drop-shadow(0 0 4px var(--a));
   animation: gem-float 4s ease-in-out infinite,
              gem-spin-burst .6s ease-out forwards;
 }
